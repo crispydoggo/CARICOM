@@ -1,0 +1,562 @@
+
+
+
+# MICROECONOMETRÍA AVANZADA 
+
+# Problem Set I - Limpieza de Base de Datos
+#
+# Lothar Mateo Rojas Sosa
+# 175608
+
+# Preparativos --------------------------------------------------------------------------------------------
+
+# Librerías
+
+rm(list = ls())
+
+
+library(seplyr)
+library(haven)
+library(plyr)
+library(seplyr)
+library(dplyr)
+library(tidyverse)
+library(lmtest)
+library(ggplot2)
+
+
+rename <- dplyr::rename # Existen dos funciones con el mismo nombre, especificamos de cuál librería es rename
+
+# Mapping general de Variables
+
+  # First round:
+
+    # Age (to filter under 18) --------------- edad, en portada  (DONE)
+    # Geographic region ---------------------- ent, portada (DONE)
+    # Broken Family (yes or no) -------------- ls06 / ls07 (DONE)
+    # Siblings (number) ---------------------- Count Folios once children are determined per household ()
+    # Mother's schooling years (number) ------ ls14 (DONE)
+    # Sex (male or female) ------------------- ls04  (DONE)
+
+
+  # Third round:
+    
+    # Employment status (yes or no) --------- tb27s + tb28p > 0
+    # Monthly labor earnings ---------------- tb35a_2,  tb35b_2
+    # Higher education degree ( yes / no) --- ed06 (8,9,10), ed08 (8,9)
+    # Geographic region ---------------------- ent, portada (DONE)
+
+
+
+
+# 0 LECTURA DE BASE DE DATOS   ---------------------------------------------------------
+
+
+# INFORMACIÓN PRIMERA RONDA
+
+
+portad <- read_dta("iiia_portadR1.dta")  %>% select(folio, ls, edad, ent)          # Información general de individuos adultos ronda 1
+portad_v <- read_dta("v_portad.dta") %>% select(folio, ls, edad, ent)         # Información general de individuos menores de 15 años ronda 1
+ 
+
+kidG <- rbind(portad,portad_v)                                          # Información general de individuos ronda 1
+rm(portad,portad_v)
+
+ls <- read_dta('c_ls.dta')  %>% select(folio, ls, ls14,ls06,ls07,ls04,ls05_1) # Información del hogar ronda 1
+
+# Creamos el método de identificación idp_link para las bases de datos de la ronda 1
+
+kidG <- kidG %>%   # pid_link para información general
+  mutate( pid_link = str_pad(ls,4,pad="0")) %>%
+  mutate( pid_link = paste( "AP", pid_link,sep = "")) %>%
+  mutate( pid_link = paste( folio/100, pid_link,sep = "")) %>%
+  mutate( pid_link = str_pad(pid_link,12,pad="0"))
+
+ls <- ls %>%   # idp_link para información general
+  mutate( pid_link = str_pad(ls,4,pad="0")) %>%
+  mutate( pid_link = paste( "AP", pid_link,sep = "")) %>%
+  mutate( pid_link = paste( folio/100, pid_link,sep = "")) %>%
+  mutate( pid_link = str_pad(pid_link,12,pad="0"))
+
+kidG <-merge(kidG,select(ls,pid_link, ls14,ls06,ls07,ls04,ls05_1), by = "pid_link") 
+
+kidG <- kidG %>% 
+  mutate(ls14 = replace_na(ls14,0) ) %>% 
+  mutate(ls07 = replace_na(ls07,0) ) %>% 
+  mutate(ls06 = replace_na(ls06,0) )
+
+
+
+# INFORMACIÓN TERCERA RONDA
+
+edR3 <- read_dta("iiia_ed.dta") %>% select(pid_link, ed06, ed08)                      # Información de educación ronda 3
+tbR3 <- read_dta("iiia_tb.dta") %>% select(pid_link, tb27s, tb28p, tb35a_2, tb35b_2)  # Información laboral individuo ronda 3
+portadR3 <- read_dta("iiia_portad.dta") %>% select(pid_link, edad, ent) # Información estado ronda 3
+portadR3_v <- read_dta("v_portad9.dta") %>% select(pid_link, edad, ent) # Información estado ronda 3
+
+
+
+
+
+# I Primera Ronda: edad, broken family, male  -------------------------------------
+
+
+educ <- function(ID, link, data){
+  
+  # La función busca el pid_link de la madre/padre en la data global y regresa sus años de escolaridad
+  
+  if (ID == 51){
+    sy <- 0
+    
+  } else {
+    
+    link <- substr(link,start=1,stop=nchar(link)-1 )
+    pidm <- paste(link,as.character(ID),sep = "")
+    
+    look <- data %>% filter(data$pid_link == pidm)
+    sy <- as.numeric(look[6])
+
+  }
+  
+  return(sy)
+  
+}
+
+kidsSample <- kidG %>%               # Filtramos la base de datos de adultos para que sean <= 18 años de edad Y al menos un padre
+  filter(edad <=18) %>% 
+  filter(ls06 + ls07 < 102 )
+
+
+ed_m <- kidsSample$ls07            # Vectores auxiliares para obetenr la educación del padre/madre
+ed_p <- kidsSample$ls06
+link <- kidsSample$pid_link
+
+for (i in 1:length(ed_m) ) {
+  
+  ed_m[i] <- educ( ed_m[i], link[i],kidG)  #Encuentra el grado de escolaridad
+  ed_p[i] <- educ( ed_p[i], link[i],kidG)
+  
+}
+
+# Filtramos la base de datos de <= 18 años, agregamos las variables de educación de los padre y si vive con ellos
+
+kidsSample <- kidsSample %>%               
+  mutate(edu_m = ed_m) %>%   
+  mutate(edu_p = ed_p) %>% 
+  mutate( edu_p = replace_na(edu_p,0), edu_m = replace_na(edu_m,0)) %>% 
+  filter( edu_p + edu_m > 0)  %>% 
+  mutate( broke = as.integer( ls06 + ls07 > 51), male = as.integer(ls04 == 1)) %>% # Añadimos las variables de broken family o si es male
+  select(pid_link, folio,ls, edad,ent,edu_m,edu_p,broke,male) %>% 
+  filter( !(edu_m == 98))
+kidsSample <-  rename(kidsSample, entR1 = ent )
+
+
+# II Primera Ronda:  Siblings ------
+
+sib <- filter( ls, ( ls05_1 == 3 |ls05_1 == 4 | ls05_1 == 10 |ls05_1 == 13 ) ) # Filtramos a los niños por hogar
+
+
+frec <- count(sib, vars = "folio")  # Contamos cuántos niños hay en el hogar por folio
+
+kidSample <- merge(kidsSample,frec, by = "folio")
+kidSample <-  rename(kidSample, sibling = freq )
+kidSample <- select(kidSample, pid_link, edad,entR1, male,broke,sibling,edu_m,edu_p)
+kidSample <-  rename(kidSample, edadR1 = edad )
+rm(sib,frec,link,i,ls,kidsSample)
+
+m <- kidSample$edu_m
+p <- kidSample$edu_p
+
+for (i in 1:length(m)){   # Si no tiene datos ponemos al papá
+  
+  if( m[i] == 0 ){
+    m[i] = p[i]
+  }
+  
+}
+
+
+
+for (i in 1:length(m)){   # Si no tiene datos ponemos al papá
+  
+  m[i] = switch(m[i], 0, 3, 9, 12,12, 15,15, 19, 19, 22)
+  
+}
+
+kidSample <- kidSample %>% 
+  mutate( ed_m = m) %>% 
+  select ( pid_link, edadR1,entR1, male,broke,sibling,ed_m)
+
+rm(i,m,p,ed_m,ed_p)
+
+
+# III Filtro: que sean individuos presentes en la primera y tercera ronda--------------------
+
+# Seleccionamos de la tercera ronda las variables de interés
+
+kidGR3 <- rbind(portadR3,portadR3_v)                                          # Información general de individuos ronda 1
+rm(portadR3,portadR3_v)
+
+kidR3 <- merge(kidSample,kidGR3, by = "pid_link")
+kidR3 <-  rename(kidR3, edadR3 = edad )
+kidR3 <-  rename(kidR3, entR3 = ent )
+
+tbR3 <- tbR3 %>% 
+  mutate( tb27s = replace_na(tb27s,0), tb28p = replace_na(tb28p,0))
+
+rm(kidGR3,kidSample)
+            
+
+# IV Filtro: mantenemos a los individuos que trabajen en la tercera ronda -------
+
+
+# Employment status (yes or no) --------- tb27s + tb28p > 0
+# Monthly labor earnings ---------------- tb35a_2,  tb35b_2
+# Higher education degree ( yes / no) --- ed06 (8,9,10), ed08 (8,9)
+
+
+kidR3 <- merge(kidR3,tbR3, by = "pid_link")
+kidR3 <- kidR3 %>% 
+  filter( tb27s + tb28p > 0) %>%   # filtramos a los que sí trabajan
+  mutate( tb35a_2 = replace_na(tb35a_2,0), tb35b_2 = replace_na(tb35b_2,0)) %>% 
+  filter(!(tb35a_2 +  tb35b_2 == 0) ) %>% 
+  mutate( income = tb35a_2 +  tb35b_2) %>% 
+  mutate( income = log(income)) %>%
+  select( pid_link, edadR3,entR1, entR3, male,broke,sibling,ed_m,income)
+  
+
+
+
+# V Filtro: examinamos la escolaridad de los individuos -------
+
+kidF <- merge(kidR3,edR3, by = "pid_link")
+kidF <- kidF %>%
+  mutate( ed06 = replace_na(ed06,0), ed08 = replace_na(ed08,0)) %>%
+  mutate( D = as.integer(    ( (ed06 == 8 | ed06 == 9) & ed08 == 1 ) | ed06 == 10 ) ) %>%
+  mutate( edadR3_s = edadR3^2) %>%
+  select(pid_link, edadR3,edadR3_s, entR1, entR3, male,broke,sibling,ed_m,income,D)%>%
+  mutate( entR1 = replace_na(entR1,0), entR3 = replace_na(entR3,0)) %>%
+  filter(!(entR1 == 0)) %>%
+  filter(!(entR3 == 0)) %>%
+  filter( edadR3 > 22) # Este último corte es fundamental, pues sabremos el efecto del higher degree una vez graduados
+
+rm(kidG,kidR3,tbR3,edR3)
+
+
+
+
+# VI MODELO -----
+
+
+# Preparamos las variables para la construcción del modelo teórico
+
+
+kidF <- kidF %>%
+  filter( !(income == 0))
+
+X <- select(kidF, male,edadR3,edadR3_s, entR3,D,income)
+
+Z <- select(kidF, male, broke, ed_m, sibling, D, entR1)
+
+
+# Agregamos las variables dummies dependiendo de la localización geográfica
+
+X <- X  %>%
+  mutate( NO = as.integer( ( entR3 == 3 | entR3 == 10 | entR3 == 25 )  )   )  %>%
+  mutate( NE = as.integer( ( entR3 == 5 | entR3 == 19 | entR3 == 26 )  )   )  %>%
+  mutate( OC = as.integer( ( entR3 == 14 | entR3 == 16  )  )   )  %>%
+  mutate( SE = as.integer( ( entR3 == 20 | entR3 == 30 | entR3 == 31 )  )   )  %>%
+  mutate( C = as.integer( ( entR3 == 9 | entR3 == 11 | entR3 == 15 | entR3 == 17 | entR3 == 21)  )   )  %>%
+  select( male,edadR3,edadR3_s, NO,NE,OC,SE,C,D, income)
+
+# Agregamos las variables dummies dependiendo de la localización geográfica
+
+Z <- Z  %>%
+  mutate( NO = as.integer( ( entR1 == 3 | entR1 == 10 | entR1 == 25 )  )   )  %>%
+  mutate( NE = as.integer( ( entR1 == 5 | entR1 == 19 | entR1 == 26 )  )   )  %>%
+  mutate( OC = as.integer( ( entR1 == 14 | entR1 == 16  )  )   )  %>%
+  mutate( SE = as.integer( ( entR1 == 20 | entR1 == 30 | entR1 == 31 )  )   )  %>%
+  mutate( C = as.integer( ( entR1 == 9 | entR1 == 11 | entR1 == 15 | entR1 == 17 | entR1 == 21)  )   )  %>%
+  select( male, broke, ed_m, sibling, NO,NE,OC,SE,C,D)
+
+
+
+
+
+
+# VI TWO STEP PROCEDURE ---------------------------------------------------
+
+
+# Primer paso, realizamos el modeo probit sobre z*Theta
+
+probit <- glm( D ~ 1 + male + broke + ed_m + sibling + NO + NE + OC + SE, 
+           family = binomial(link = "probit"), 
+           data = Z)
+
+coeftest(probit)
+
+# Extraemos los coeficientes 
+
+theta <- summary(probit)$coefficients[1:9]
+
+# Calculamos el término de correción para hacer el segundo paso
+
+
+# Ordeno base de datos
+
+aux_1 <- Z %>% 
+  filter( D == 1) 
+
+aux_1 <- aux_1 %>%
+  mutate( ones = integer(length(nrow(aux_1))) + 1 ) %>%
+  select( ones, male, broke, ed_m, sibling, NO,NE,OC,SE)
+
+aux_0 <- Z %>%
+  filter( D == 0) 
+
+aux_0 <- aux_0 %>%
+  mutate( ones = integer(nrow(aux_0)) +1 ) %>%
+  select( ones, male, broke, ed_m, sibling, NO,NE,OC,SE)
+
+
+# Ordeno base de datos
+
+c_1 <- integer(length(aux_1$male)) # Vector donde se almanacerá la información de la correción del 2 step procedure
+c_0 <- integer(length(aux_0$male))
+
+
+for ( i in 1:length(aux_1$male)){  
+  
+  c_1[i] <- as.numeric(aux_1[i,])%*%theta
+  c_1[i]  <- dnorm(c_1[i]) / pnorm(c_1[i])
+    
+}
+
+for (i in 1:length(aux_0$male) ){  
+  
+  c_0[i] <- as.numeric(aux_0[i,])%*%theta
+  c_0[i] <- dnorm(c_0[i]) / ( 1 - pnorm(c_0[i]) )
+  
+}
+
+
+# Una vez con el término de error separamos las muestras de X dado la decisión
+
+xo <- X  %>%
+  filter (D == 0) %>%
+  mutate( fix = c_0) %>%
+  select( male,edadR3,edadR3_s, NO,NE,OC,SE, income,fix)
+
+x1 <- X  %>%
+  filter (D == 1) %>%
+  mutate( fix = c_1) %>%
+  select( male,edadR3,edadR3_s, NO,NE,OC,SE, income,fix)
+
+# Corremos la regresion 
+
+step2_o <- lm(income ~ 1 + male +edadR3 + edadR3_s + NO + NE + OC + SE +  fix, xo )
+step2_1 <- lm(income ~ 1 + male +edadR3 + edadR3_s + NO + NE + OC + SE + fix , x1 )
+
+
+coeftest(step2_o)
+coeftest(step2_1)
+
+# Extraemos los Betas muestrales así como el rosigma
+
+beta_1 <- step2_1$coefficients[1:8]
+rosigma_1 <- step2_1$coefficients[9]
+
+beta_o <- step2_o$coefficients[1:8]
+rosigma_o <- step2_o$coefficients[9]
+
+rm(i)
+
+
+# VIII Treatment Parameters -----------------------------------------------------------
+
+
+# Ordenamos los datos en Xo y X1 para calcular los treatments, añadimos el intercept
+
+x1 <- x1 %>%
+  mutate(ones = integer(nrow(x1)) +1 ) %>%
+  select( ones, male,edadR3,edadR3_s, NO,NE,OC,SE, income,fix)
+
+xo <- xo %>%
+  mutate(ones = integer(nrow(xo)) +1 ) %>%
+  select( ones, male,edadR3,edadR3_s, NO,NE,OC,SE, income,fix)
+
+
+
+# Average Treatment Effect (ATE)
+
+x_barra <- ( 1/ nrow(X) ) * c(nrow(X),  sum(X$male), sum(X$edadR3),  sum(X$edadR3_s),  sum(X$NO), sum(X$NEe), sum(X$OC), sum(X$SE))
+
+ATE <- x_barra%*%as.numeric(beta_1 - beta_o)
+
+
+# Treatment on the treated (TT)
+
+
+TT_ind <- integer(nrow(x1))
+
+for (i in 1:nrow(x1)){
+  
+  TT_ind[i] <- as.numeric(x1[i,1:8])%*%as.numeric(beta_1 - beta_o) + (rosigma_1 - rosigma_o)*as.numeric(x1[i,10])
+  
+}
+
+TT <- mean(TT_ind)
+
+
+# Treatment on the untreated (TU)
+
+
+TU_ind <- integer(nrow(xo))
+
+for (i in 1:nrow(xo)){
+  
+  TU_ind[i] <- as.numeric(xo[i,1:8])%*%as.numeric(beta_1 - beta_o) + (rosigma_1 - rosigma_o)*as.numeric(xo[i,10])
+  
+}
+
+TU <- mean(TU_ind)
+
+
+
+# Local Average Treatment Effect (LATE)
+
+zo <- aux_0
+
+ud <- rnorm(nrow(zo))
+
+
+# LATE a) cambio en broken family
+
+# Hacemos el cambio 
+
+zo_a <- zo %>%
+  filter(broke ==  1) %>%
+  mutate( broke =  0 )
+
+LATE_A <- integer(nrow(zo_a))
+
+
+for ( i in 1:nrow(zo_a)){
+  
+  LATE_A[i] <- as.numeric(zo_a[i,])%*%theta + ud[i]
+  
+  if (LATE_A[i] > 0) {
+    
+    LATE_A[i] <- 1
+  }
+  
+  else{
+    LATE_A[i] <- 0
+  }
+  
+}
+
+LATE_a <- mean(LATE_A)
+
+# LATE b) cambio en mother school years from 0 to 16
+
+change <- function( edm )
+{
+  a <- edm
+  
+  for( i in 1:length(edm)){
+    if( edm[i] == 0 ){
+      
+      a[i] <- 16
+      
+    }
+    
+  }
+   
+  
+  return(a)
+}
+
+zo_b <- zo %>%
+  filter( ed_m == 0) %>%
+  mutate( ed_m = change(ed_m)  )
+
+
+ud <- rnorm(nrow(zo))
+
+LATE_B <- integer(nrow(zo_b))
+
+
+for ( i in 1:nrow(zo_b)){
+  
+  LATE_B[i] <- as.numeric(zo_b[i,])%*%theta + ud[i]
+  
+  if (LATE_B[i] > 0) {
+    
+    LATE_B[i] <- 1
+  }
+  
+  else{
+    LATE_B[i] <- 0
+  }
+  
+}
+
+LATE_b <- mean(LATE_B)
+
+# LATE c) cambio en siblings years from 4 to 0
+
+zo_c <- zo %>%
+  filter( sibling == 4) %>%
+  mutate( sibling = 0  )
+
+
+ud <- rnorm(nrow(zo))
+
+LATE_C <- integer(nrow(zo_c))
+
+
+for ( i in 1:nrow(zo_b)){
+  
+  LATE_C[i] <- as.numeric(zo_c[i,])%*%theta + ud[i]
+  
+  if (LATE_C[i] > 0) {
+    
+    LATE_C[i] <- 1
+  }
+  
+  else{
+    LATE_C[i] <- 0
+  }
+  
+}
+
+LATE_c <- mean(LATE_C)
+
+
+
+
+# MTE THROUGH DIFFERENT PROPENSITY SCORES
+
+up <- sort( pnorm( - rnorm( nrow(Z) ) ) , decreasing = FALSE)
+
+f_MTE <-  (rosigma_1 - rosigma_o)*up + as.numeric(ATE)
+
+
+mte_data <- data.frame(up,f_MTE)
+
+ggplot(mte_data, aes(x=up, y=f_MTE)) +
+  geom_line()
+
+
+
+
+
+
+
+
+
+
+
+
+

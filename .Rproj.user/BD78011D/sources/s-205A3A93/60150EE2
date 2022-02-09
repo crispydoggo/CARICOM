@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1644438746162.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "621856416",
+    "id" : "60150EE2",
+    "lastKnownWriteTime" : 1644438769,
+    "last_content_update" : 1644438769189,
+    "path" : "~/Desktop/RA_Lothar/Jaakko_Vaccines/Jaakko_Vaccines/.gitignore",
+    "project_path" : ".gitignore",
+    "properties" : {
+        "cursorPosition" : "3,6",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "gitignore"
+}
