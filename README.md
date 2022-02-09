@@ -23,7 +23,7 @@ Esperar y reloadear
 
 # 5. 
 
-Sigue el link de github: ![Link](https://resources.github.com/whitepapers/github-and-rstudio/) hasta "Create the remote repository on GitHub".  Una vez creado el repo y un primer commit, en setting, puedes escoger pages, main y lo que quieres publicar  (docs).
+Sigue el link de github: [Link](https://resources.github.com/whitepapers/github-and-rstudio/) hasta "Create the remote repository on GitHub".  Una vez creado el repo y un primer commit, en setting, puedes escoger pages, main y lo que quieres publicar  (docs).
 
 
 
