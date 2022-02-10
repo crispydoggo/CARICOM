@@ -10,6 +10,13 @@ output:
   html_document:
     toc: TRUE
     toc_depth: 3
+    toc_float: 
+      collapsed: TRUE
+      smooth_scroll: TRUE
+    number_sections: TRUE
+    css: 
+      before: "Style.css"
+
 date: "`r format(Sys.time(), '%d %B %Y')`"
 ---
 
@@ -25,8 +32,23 @@ library(tidyverse)
 library(ggplot2)
 library(readxl)
 
+rm(try, try_0, try_1, try_4)
+
 RBM <- read_excel("RBM_Dominica_1.xlsx")
 RBM_ideal <- read_excel("RBM_ideal.xlsx")
+
+RBM_ideal <- RBM_ideal %>%  
+            mutate(  dimension = Dimension, dimension_d = case_when(  
+              dimension == 1 ~  "Institutionalization",
+              dimension == 2 ~ "Implementation",
+              dimension == 3 ~ "Technical",
+              dimension == 4 ~  "Use"
+              ) ) %>% 
+            select(-Dimension) %>% 
+            select(dimension, dimension_d, bullet_id, sub_id, indicator)
+
+RBM_full <- left_join(RBM,RBM_ideal)
+
 
 try_1 <- RBM %>% 
         filter( bullet_id == 1)  %>% 
@@ -39,33 +61,56 @@ try_4 <- RBM %>%
 try_0 <- RBM %>% 
         filter( bullet_id == 1)  %>% 
         filter(sub_id == 0)
-```
 
-## 1: There is a documented, approved and binding RBM Policy within the government {.tabset .tabset-pills}
-
-
-```{r, results = 'asis' , echo = FALSE}
-cat(paste0( " **Overview:**  ", try_0$comment[2], " \n\n"))
 ```
 
 
+```{r, results = 'asis' , echo = TRUE}
 
-### Sub-dimension 1
+for ( i in 1:4){
+  
+  stage_1 <- RBM_ideal %>% 
+            filter( dimension == i)
+  
+  cat(paste0( "# ", stage_1$dimension_d[1], " \n\n"))
+  
+  for( j in min(stage_1$bullet_id):max(stage_1$bullet_id)){
+    
+    
+    stage_2 <- stage_1 %>% 
+            filter( bullet_id == j)
+    
+    cat(paste0( "### ", filter(stage_2, sub_id == 0)$indicator[1], " {.tabset .tabset-pills} \n\n"))
+    
+    
+    for( k in 1:max(stage_2$sub_id)){
+      
+      stage_3 <- RBM_full %>% 
+            filter( dimension == i) %>% 
+            filter( bullet_id == j) %>% 
+            filter( sub_id == k)
+      
+      cat(paste0( "#### Sub-dimension  ",k, " {-} \n\n"))
+      
+      cat(paste0( " > ", stage_3$indicator[1]), "\n\n")
+      
+      cat(paste0("- ", stage_3$comment ), sep = "\n\n")
+      cat("\n\n")
+      
+    }
+    
+    cat(paste0( "### {-}", " \n\n"))
+    
+    
+  }
+  
+  
+  
+  
+}
 
-```{r, results = 'asis', echo = FALSE }
-cat(paste0( "**Indicator:** ", RBM_ideal$indicator[2]))
+
 ```
 
-```{r, results = 'asis', echo = FALSE }
-cat(paste0("- ", try_1$comment ), sep = "\n\n")
-```
 
-### Sub-dimension 4
 
-```{r, results = 'asis' , echo = FALSE}
-cat(paste0( "**Indicator:** ", RBM_ideal$indicator[5]))
-```
-
-```{r, results = 'asis' , echo = FALSE}
-cat(paste0("- ", try_4$comment ), sep = "\n\n")
-```
