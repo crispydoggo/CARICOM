@@ -5,7 +5,7 @@ Hacer cambios y salvar todo
 # 2. 
 
 ``` 
-git commit -am "Mensaje de commit"
+git commit -am "Update"
 ``` 
 
 a: para add

@@ -50,13 +50,13 @@ sort_rbm <- function(CARICOM){
   saveWorkbook(book, file = "RBM_com_clean2.xlsx")
 }
 
-add_rbm <- function(){
+add_rbm <- function(file_name){
   
-  RBM_info <- read_excel("RBM_com_clean.xlsx", sheet = 1)
+  RBM_info <- read_excel(file_name, sheet = 1)
   RBM_info <- arrange(RBM_info, sub_id)
   for( i in 2:19){
     
-    aux <- read_excel("RBM_com_clean.xlsx", sheet = i)
+    aux <- read_excel(file_name, sheet = i)
     aux <- arrange(aux, sub_id)
     RBM_info <- bind_rows(RBM_info, aux)
     
@@ -79,7 +79,7 @@ add_rbm <- function(){
 sort_rbm(CARICOM)
 
 # Process the ordered Comment Section
-RBM_info <- add_rbm()
+RBM_info <- add_rbm("RBM_com_clean_Jamaica.xlsx")
 
 
 # ==========================
@@ -88,6 +88,5 @@ RBM_info <- add_rbm()
 
 
 book <- loadWorkbook("RBM_Dominica.xlsx")
-createSheet(book, name = "RBM")
-writeWorksheet(book, RBM_info, sheet = "RBM")
-saveWorkbook(book, file = "RBM_Dominica_1.xlsx")
+writeWorksheet(book, RBM_info, sheet = 1)
+saveWorkbook(book, file = "RBM_Jamaica.xlsx")

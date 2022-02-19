@@ -1,11 +1,11 @@
 ---
-title: "CARICOM RBM"
+title: "CXC - RBM Diagnosis"
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
  encoding=encoding,
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
-author: "Lothar Mateo Rojas Sosa"
+author: "CLEAR LAC"
 output: 
   html_document:
     toc: TRUE
@@ -13,9 +13,7 @@ output:
     toc_float: 
       collapsed: TRUE
       smooth_scroll: TRUE
-    number_sections: TRUE
-    css: 
-      before: "Style.css"
+    number_sections: FALSE
 
 date: "`r format(Sys.time(), '%d %B %Y')`"
 ---
@@ -32,45 +30,55 @@ library(tidyverse)
 library(ggplot2)
 library(readxl)
 
-rm(try, try_0, try_1, try_4)
+add_rbm <- function(file, n){
+  
+  RBM_info <- read_excel(file, sheet = 1)
+  RBM_info <- arrange(RBM_info, sub_id, order)
+  for( i in 2:n){
+    
+    aux <- read_excel(file, sheet = i)
+    aux <- arrange(aux, sub_id, order)
+    RBM_info <- bind_rows(RBM_info, aux)
+    
+  }
+  
+  RBM_info <- RBM_info %>% 
+    select( bullet_id, sub_id, comment,order) %>% 
+    mutate(bullet_id = as.integer(bullet_id), sub_id = as.integer(sub_id)) 
+  
+  return(RBM_info)
+  
+}
 
-RBM <- read_excel("RBM_Dominica_1.xlsx")
-RBM_ideal <- read_excel("RBM_ideal.xlsx")
+
+
+RBM <- read_excel("RBM_CXC.xlsx")
+RBM_ideal <- read_excel("RI_ideal.xlsx")
 
 RBM_ideal <- RBM_ideal %>%  
-            mutate(  dimension = Dimension, dimension_d = case_when(  
-              dimension == 1 ~  "Institutionalization",
-              dimension == 2 ~ "Implementation",
-              dimension == 3 ~ "Technical",
-              dimension == 4 ~  "Use"
+            mutate( dimension = case_when(  
+              dimension_d ==  "Institutionalization" ~ 1,
+              dimension_d ==  "Implementation"   ~ 2,
+              dimension_d ==  "Technical" ~ 3,
+              dimension_d ==  "Use" ~ 4
               ) ) %>% 
-            select(-Dimension) %>% 
             select(dimension, dimension_d, bullet_id, sub_id, indicator)
 
 RBM_full <- left_join(RBM,RBM_ideal)
 
 
-try_1 <- RBM %>% 
-        filter( bullet_id == 1)  %>% 
-        filter(sub_id == 1)
-
-try_4 <- RBM %>% 
-        filter( bullet_id == 1)  %>% 
-        filter(sub_id == 4)
-
-try_0 <- RBM %>% 
-        filter( bullet_id == 1)  %>% 
-        filter(sub_id == 0)
-
 ```
 
 
-```{r, results = 'asis' , echo = TRUE}
+
+```{r report, results = 'asis' , echo = FALSE}
 
 for ( i in 1:4){
   
+  
   stage_1 <- RBM_ideal %>% 
             filter( dimension == i)
+  cat(paste0( "---\n\n"))
   
   cat(paste0( "# ", stage_1$dimension_d[1], " \n\n"))
   
@@ -80,8 +88,16 @@ for ( i in 1:4){
     stage_2 <- stage_1 %>% 
             filter( bullet_id == j)
     
-    cat(paste0( "### ", filter(stage_2, sub_id == 0)$indicator[1], " {.tabset .tabset-pills} \n\n"))
+    cat(paste0( "### ", j, ".  ", filter(stage_2, sub_id == 0)$indicator[1], " {.tabset .tabset-pills} \n\n"))
     
+    
+    intro <- RBM_full %>% 
+            filter( dimension == i) %>% 
+            filter( bullet_id == j) %>% 
+            filter( sub_id == 0) %>%
+            mutate(comment = str_replace_all(comment, "\\*", " - "))
+    
+    cat(paste0( ifelse(str_detect(intro$comment, "-"), " ", " "), intro$comment, sep = "\n\n"  ))
     
     for( k in 1:max(stage_2$sub_id)){
       
@@ -90,27 +106,25 @@ for ( i in 1:4){
             filter( bullet_id == j) %>% 
             filter( sub_id == k)
       
-      cat(paste0( "#### Sub-dimension  ",k, " {-} \n\n"))
+      cat(paste0( "\n\n#### Sub-element  ",k, " {-} \n\n"))
       
-      cat(paste0( " > ", stage_3$indicator[1]), "\n\n")
+      cat(paste0( " > ", filter(stage_2, sub_id == k)$indicator[1]), "\n\n")
       
-      cat(paste0("- ", stage_3$comment ), sep = "\n\n")
+      
+      cat(paste0(ifelse(str_detect(stage_3$comment, "\\*"), "\t", " - "), stage_3$comment ), sep = "\n\n")
       cat("\n\n")
+      
+      
       
     }
     
-    cat(paste0( "### {-}", " \n\n"))
+    cat(paste0( "### {.unlisted .toc-ignore}", " \n\n"))
     
     
   }
   
-  
-  
-  
+
 }
 
 
 ```
-
-
-

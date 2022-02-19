@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Lothar Mateo Rojas Sosa" />
+<meta name="author" content="CLEAR LAC" />
 
-<meta name="date" content="2022-02-10" />
+<meta name="date" content="2022-02-18" />
 
-<title>CARICOM RBM</title>
+<title>CXC - RBM Diagnosis</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -1329,7 +1329,6 @@ h6 {
 }
 </style>
 
-<link href="data:text/css;charset=utf-8,%3Cstyle%3E%0A%23TOC%20%7B%0Abackground%3A%20url%28data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAABLAAAAEeCAYAAACaD%2Bz2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABAxpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw%2FeHBhY2tldCBiZWdpbj0i77u%2FIiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8%2BIDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjVEMjA4OTI0OTNCRkRCMTE5MTRBODU5MEQzMTUwOEM4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjgzRDUxRUNFNTMwODExRTVBMzgxOTkxNkExNjNBMTk2IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjgzRDUxRUNENTMwODExRTVBMzgxOTkxNkExNjNBMTk2IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE0IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6N2Q1ZDgxMmYtOWQwOS00MGViLThkOWMtZWQwMjU0MTQ2YWFlIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MzBmYWY1MjctOGQ0ZC0xMTc4LTlkY2EtOWE5OGVlY2Q1YjY5Ii8%2BIDxkYzp0aXRsZT4gPHJkZjpBbHQ%2BIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI%2BbG9nby1zb0NhcmVlcnM8L3JkZjpsaT4gPC9yZGY6QWx0PiA8L2RjOnRpdGxlPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI%2FPjoEs60AAEYySURBVHja7N1dTuPY9vDhXa26LOnQIzhBqK8LRlBBOu91wQgqGUHBCAgjAEZAGAHh%2Bn8kUiOo9PURqvQImpa479eLLHe5qACxvdf%2BsH%2BPZNEfkNjb9v5Y3nv5jQPWeJjsbBU%2FzoptWGx77yZ395QKAAAAAACI4ReKAE89THZ2ix%2B3xTYqtkGxXVIqAAAAAAAgFgJY%2BMHDZGfkVsGr3cp%2FPtD%2FDgAAAAAAENwbigCismRw9MyvyBLC%2FXeTuwWlBQAAAAAAQiKAhXLJoCwT3H3lVyV4tU8%2BLAAAAAAAEBJLCHvuYbJz5H5eMvgc%2BZ0zSg0AAAAAAITEDKye0iWDMuvqoMGfj99N7qaUIgAAAAAACIEAVg%2FpksFrt3rDYBPkwwIAAAAAAMGwhLBndMngV9c8eCUeZ2%2FpLC4AAAAAAABTbymCfmi5ZHCdMh%2FWmNIFAAAAAACWWELYAx6WDL6EfFgAAAAAAMAUAayO0yWDlm8OJB8WAAAAAAAwRQCrwx4mOxK4OgrwVRK8kiDWPaUOAAAAAAB8I4l7t1241Qwpa7JE8YTiBgAAAAAAFghgddi7yd3ShUuyfvQw2Tmg1AEAAAAAgG8EsDru3eRuVvw4D%2FR1lw%2BTnQGlDgAAAAAAfCKA1QPvJnfHbpWnytqWW73tEAAAAAAAwBsCWP1x6ALlw9Lk8QAAAAAAAF4QwOoJ8mEBAAAAAIBcEcDqEfJhAQAAAACAHBHA6hnyYQEAAAAAgNwQwOon8mEBAAAAAIBsEMDqIc2HdRzo68iHBQAAAAAAWnlDEfTXw2TnsvgxCvBVMttrTwNnAAAAAAAAtTADq9%2FIhwUAAAAAAJJHAKvH3k3uZGbU2IXLhzWh1AEAAAAAQF0sIYQsJRwVPy4Dfd3%2Bu8ndnFIHAAAAAACbIoCFR4HzYW3r7C8AAAAAAIBXsYQQJfJhAQAAAACAJBHAwqPA%2BbCG5MMCAAAAAACbYgkhfkA%2BLAAAAAAAkBoCWPgJ%2BbAAAAAAAEBKWEKIdciHBQAAAAAAkkEAKwEPk52jYttKZX8q%2BbBCIB8WAAAAAAB4EQGsyDTn1FmxfS3%2BeTeV%2FXo3uZMZWMeBvu6kOPYhVwMAAAAAAFiHHFgRadDmtvKfHmc%2BvZvczRLaR1nidxDgq8iHBQAAAAAA1mIGViQ62%2Bpp%2FqfHnFCypDChXZWlhMsA30M%2BLAAAAAAAsBYBrAg035W86e%2B5vFdn%2BibA6HRG1GGgrxsmFrwDAAAAAAAJYAlhBA%2BTHVk2ONzgVyUP1X4Ky%2Bo0sHQW6Ov2NAcXAAAAAAAAM7BC05lVww1%2FXZYZJpHc%2Fd3k7rz4ESo313VKb2UEAAAAAABxEcAKSN84OKr5Z4Niuy3%2B9iCBQwiVD0uO%2BZIrBgAAAAAACAJYgegbB5sGZZJI7h44H9YB%2BbAAAAAAAIAgB1YAugRQ8l75WBY3fTe5G0c%2BHvJhAQAAAACAYAhgGdNcThK88pnHKnpy9%2BK4rosfIZY1Lt0qiHXP1QQAAAAAQD%2BxhNCeBHp8J2FPIbk7%2BbAAAAAAAEAQBLAM1XzjYF0DFzG5u86ICrWUkXxYAAAAAAD0GAEsIw3fOFhX1OTu7yZ38%2BLHaaCvO4s84wwAAAAAAERCDiwD%2BsbB28BfOy224xi5oorjlWMdBviqpSMfFgAAAAAAvcMMLM90ltB1hK8eudWSwq0I331YbCGCSgNHPiwAAAAAAHqHAJZ%2FEmDZivTdEjz7Fnqpnc6IOgz0dQe6PBMAAAAAAPQEASz%2FJLF5zCVuEjy7DR3kIR8WAAAAAACwQg4sAw%2BTnYFbLSOMHWQ5fTe5mwQ%2B9lD5sBbFtk8%2BLAAAAAAAuo8ZWAbeTe6WxY99t0qsHtPJw2TnMnBerFD5sCQ4eMbVBgAAAABA9zEDy9jDZGdS%2FDiJvBtBZysFfgvjuDiuKVcaAAAAAADdxQwsY7qEL3ZerKDJ3cmHBQAAAAAAfGIGViAaZJFZSVsRd0OCaMehZiyRDwsAAAAAAPjADKxA3k3uJMiy7VbBllgkeHapyxpDIB8WAAAAAABojRlYgWlCdQm2jCLvytStZmPdGx%2FvgVu9kTEE8mEBAAAAANBBBLAi6VNy9%2BJYJWB3FOB47vV4FlxhAAAAAAB0BwGsiB4mOyO3mo0VOy%2BWedCnONavbrXUzxr5sAAAAAAA6BhyYEWky932Xdw3FErw7FaDaZZC5sM64eoCAAAAAKA7CGBF1pfk7sVxLosf40DHc6S5twAAAAAAQAewhDARfUnuHjgf1p4GzgAAAAAAQMYIYCWmD8ndQ%2BbDKo5hj6sKAAAAAIC8sYQwMe8mdxO3WmoXMy%2BWBJe%2BPUx2rIJMwfJh6YwvAAAAAACQMQJYCep6cnfyYQEAAAAAgDoIYCWq68ndi%2BObFT%2FOAx2HHMOAqwoAAAAAgDyRAytxXU%2FuTj4sAAAAAADwGmZgJU4CRsUmy%2B1OI%2B%2FKyK2WFG55%2FlzyYQEAAAAAgBcRwMpEV5O7az6s40D7Tz4sAAAAAAAyxBLCzGjw6Nat8lPFIkG0Y0027%2Bu4Ll2YZZKy73saOAOATtne%2Be225p8svt3975iSAwAYtk0yfhm472lDPrT4uKui3Zpu%2BL23Rod0XOzDgjMLhPeWIsiLJHd%2FmOxIcvdbFyZ31Dplcvf3xf74Gvgc6%2FHsBtj362IjHxaALhpSBACAmLZ3fpP%2Btqx6%2BKjtks8H718SaBO3OMtAHCwhzJAmUt93q8TqMcmSvGsfebH0mEItkdy1eLMiAAAA0FfbO78Ni00eFP9ZbLK6QoJYBHsAeEMAK1MJJXeXhkmSuw88HJNMxQ21lOWk2OchVxIAAADQnAauZHXIrY4NAMAEAazMJZTc%2FauP5O6aV2saaL%2BvDd6qCAAAAHSeLBUsNnnLtwSuhpQIAGsEsDpAgz6ypHAZcTckECRBrJGHz5JZWItA%2B3zNFQQAAABsThOzfy22I0oDQCgEsDpCl99JYvLYb8SQ5O5nLY8lZD6sIfmwAAAAgM3IkkG3mnU1oDQAhEQAS0kQo9iOcl5SpnmxJIg1jbwrrZO7kw8LAAAASMv2zm%2BP%2BW8dydkBREAAyz0Gr6QCPik2mTn0TYNZOQeyZPbSceTdaJ3cnXxYAAAAQBp02eAlJQEgFgJYK9W122Uw68%2BHyc6lj7frxfBucnde%2FDh0%2BSd3Jx8WAAAAEJEkbHfMvAIQWe8DWDrr5vMz%2F3vkVjOyLn28YS%2B0d5O7mcs8uXslH1YI5MMCAAAAfnbpCF4BiIwZWKvZV69VxiO3CsLc5pYrqQvJ3cmHBQAAAMShea8OKAkAsb3pewE8THa%2Bufpv0JgX25XmaMrpWOXJySjybsissLHOrKq7%2F9eBGk%2FZt%2B0m%2B4hoHSuZIVk3QHr17e5%2FU0oPHbsX%2Fq7bnhX3wT4lBwB4oW1pMl6yclq0WxOjNnFT%2B8U%2BzLkygPB6PQNLl7U1qYyHbjWj6FvTpXExdCC5u%2Bz%2FMsA%2Bkg8rP1t6X9bZBhQbAADA87Z3fms6XgIA7%2Fq%2BhPCk5d9LZV4GsrJ4c2HOyd11RtRhoH0c5JrAHwAAAEhkvAQA3vQ2gNVi9tU6A63cy0DWIOVjzzm5e6B8WFI%2Be8V3LakiAAAA0Eea%2B2pASQBIRZ9nYH0y%2BEwJypSBrMuUA1k5J3fXWWQzg32RGV7Hxecfkv8KAAAAPfeRIgCQkl4GsPQtc0Pjrxm574GsYYrlIEGaYpMg1jTyrhxJgvaaSzB958OSQN6%2BBscAAACAvuPNgwCS0tcZWCHXco%2FcKmn5bcKBrOySu3vOhzV1q%2BDVgioBAAAAfbe985uMW7YoCQApedu3A9bE4cMIXy3fOSy%2BX4IkF%2B8md9OUykVmHhX7tiz%2B8TJiY1Umd98omCS%2FU%2FyuBN7OGn5fuWRwSlUAAAAA%2FNAvD0H6%2FDfFNt%2Fw95ecGqC%2F3vbwmD8n0BjIskKZBXZabLNU8i1JcncNYl27eAkby%2BTu400CSxp4%2B%2BDqT3GWxnLMrCsAAADgJx%2BMP%2F9xNcW3u%2F%2FNKWoAm%2BrVEkJdnjZKZHdkX2S2U%2FnmwiSm6Gaa3L1uPqypY8kgAAAA8BzLsYkEr%2FYJXgGoq285sE4S3KfqmwvPUnhzYW7J3XUG23jDxlJmXY15yyAAAADwrKHhZx9%2Fu%2FsfD5IB1NabAJYGQVJ%2Bk4bs35H7%2FubCQewdyim5e7Gvc7dakvmcx5ll5LsCAAAAoll%2Bu%2Fsf%2FXEAjfRpBpYEh3J5k8bIrQJZ17HfXCg5ptzqbX8xZyyVyd2Hr%2BzrxK1PAHkuM8qKbcktDwAAAEQzowgANNWLAJbOvvqc4a6Xs49kizZ7TJK7Fz%2F2Xdy3fmxpWYxe%2Bb1qsO0xOWSx%2F8fc6gAAAEB0f1AEAJrqywwsCX7knPNoWGwyG%2BvbBgEcE4kld798YT8fg1bu%2B5JBnvIAAAAAaSD3FYDG3vbhIHXp2LYGfyRh%2BiDTQ5H9lgCOHMNFsU1DJiPX79rTANIoYjmMNCfW4brj13xYe9zeAAAAAAB0Q6%2FeQigJvItt261m6MwzPpRBsZ25VZ6syWtv6TMoxxSSuw%2FdaknhLrcxAAAAAADd9ksfD1qWlRWb5HSSLeclZhK4ktlYwd9cqMndpfxiJ3e%2FjZ3oHgAAAAAA2PqlzwcvS82KTWZjyaysacaHIoGskfseyNoNVX5uFcRaRD72qEnuAQAAAACArV8oglWOLF0WJ4EsmVmUc8L3UbF91TcXDgOUnQSvJIg1j3jMcr5ICAkAAAAAQEcRwKrQQJbkdpJA1qnL%2F82FtxrIGhmX270uyZxGOtZ9TdQPAAAAAAA66C1F8DN9s50kR5fZWLI0Lec3Fw5l0zcXnkoie8NyGxff86X4x8uAxzfWWWAAAPTC9s5vg3X9km93%2F5tTOjC87oZr%2FvOyuO6WlE7Ycudeh%2BH1JulZ1qWjWRTX3T0lhNgIYL1AA1lT2XQW0%2BdnbugcSEf3UgNZV8V2rsfnu8ykrKQjc%2B1W%2BaksnVsG5AAAiDiI2NU%2Bx3v9OXCvPEwr%2Fqb6rzLAlXb%2Bd%2F3nYIOP5wJsvqQ0eLc%2B1sDnrRy4DvW6K%2F99a8PrbuG%2Bp3X4Xfd9kfg9tpXK9amBqrLsBy%2BNOSplvtStLPMZQQZsWG9V25gtvfZczXv9i15%2F85CB7GeC6b7cx663PBxf1GCjdbtIAGtDGiiZal6pk01u8kQNdP8%2FF8dyIcfke%2FmdJHcvPluWFF46u4DfTJd7AgDQhQGFDCBk1vdH7WO0HViX%2FZRyJrl8h3TKZXB9YxwEku88MyyrvYQCI1K2I8PP%2F9X4ututXHdt%2B2y7T649%2Bfz78ppz6QVXzoz6828a3PNNX0ZUDhTL47jU%2B1weVk8JZqFyvVXbl4HRvT5zq6CW9b1%2B5mwnlbyJfJ6uW36MrCKLOU42bRcJYNWkb96bayDrk3GnxdKWXlwnxbFM3Wp54dJjOS00iHVt0DmQhnnM1QgA6MCgYtRyAFt30CHbUfG9Sx1sXBg8OZ86wwCW9r9SCWBZnjeTAIQGTuS6%2B%2BzsU2SUQRrZJLgi19xVcVyzHt%2FzAy37kbNZrVDe5yda3qeJLfPcfTJbtC6WrW5%2Bre3qtXbg7FfGlPXKSO91aQdujO71K2cYwJIZUBFn%2Bn701C7FDGANDT979oZbu52HyY40QtZP30KRiuZKg3Q%2By%2BjSY%2FlIR26PpO1eOq%2Fl1PlqA%2FBhza%2FLIOGvyr%2BX10cya%2BF1qu1tzT%2BTDt2kI%2BdxXWPx4Zk%2FW3s%2Byafx0%2FVULdt%2FrekolUuzquWYwrTzv2v%2BiUz73%2BesR7l3QwUQNroOtE6cezzGa2cX3JEB7HYig8Ovhl9x6HPwp4GTVPqs0o97XAkQqy9RlMetxUCrOJ43iZW%2FlO9F3T5Pg%2FYklI37b4bHsJ9yv0n7MamsGFrqOZtmVPdGGyMUx%2Fan8xNsjDJTWeu5b4ZfMSaA5YkGssrO6Fbmh%2FPYkfUZyNIcYj6Su%2B%2BRtL1xRT%2FUoMau5wHTXBun33UwHKOylGPrfABLpxXvVs6j77qmzF3yRX%2FOu778QBvaA8%2F3RrlM60voWQZdCWBpndVmBs%2BXVO9vnXF1lmhfQa7bYx%2F1uKdlEMl1zp8co5zHI6ugQ3F8v3raz3LW%2FVGC15z3wW2NcgkWwCq%2Ba5LAGOFxBcOm9w0BrBclGcBKLHBleq8Xx%2FrN2T0AitI38txunhfHcBzhGHyN%2BZ%2FzK0sIPdEZQeWbC6WD8Mnl%2F%2BZCaeAufCRK95TcnTcO1m%2FEPjn7acPDJ99b5rso18AvORutBh1t82PUUSbxHFb2ocyl0ZlzWVm%2BcWBUT1eXacm%2FSx16xSy3jc%2BPlN1ti3pLrtnzRI%2FLMjekr%2Fr8a7Gv5zrQaBzAluCttgdW7U8KywhNlw96HBBdunQfrkodLMuNpE4ep5z0vQP3%2Fa7e3%2BMYAUOY9xdTDVI%2Fvdel7vbxoGRmeLxDKdMID3E%2FevysWMsIPxh%2B9uPqH2ZgGdJZRycu30BWSQatp26VOP2%2BZZk0bcjPSdq%2BcQM2cuksSykHk6bJRBvOwFrqZlXBHrc4noGzzY%2FR1NytAjHTTO%2BPkQ56hzHrUsvyy30GlofZSVLf7Kc2c1BnX5xk2PYfthlkFMftM4XAT%2FsXcxlhgCUsey3Lfkv7WweZXXfBZkdbz8BKfLblq7MzmIH1omRmYGkf%2BDLD8aYEsc5bHvet4f4dRphF%2F6fn%2BiL4TGWDY%2FjpmiGAFYAGsmIOmnx5XEPvVsGk%2BxblIRd1neTuEjg75EraaICU%2BhLWqTOYiRKgEQsygNYBx1EGA92li7Tko%2BH1Ub4RbZBQ%2BY0tOr85B7A8TDtPLnil97TFy0yyGGSkHuRpeW4tlw%2B2Cs5puV%2B7fB%2BgznXweG98Ds0CWAGW0XjpkxX7OvbYnoRCAOvHvv%2BJy9dM%2B0P3DY%2FfMlgSdAme0bL70Mdg3eZvy2qQXxj225Plc8UmA4R99z0Bdo7K6anfHiY7Z5r3q0l53Gt5bDL45Y2Dr1cWQ10HfuLSz78mHbpb6TRq0Klr2gSvpOH6lklHRO59mQb%2BLeXzKA2pDlBSG8gN9D641gAH9Vg3g1flUsjc67oznUnVZCAv52VpuG8xZxdZfvdFy3vp1uU9%2B1%2Fuma96D%2FWxPgt2DeuMb%2BR5nV26vINXZT162%2BJet5whFbrt%2FmhUvqHrbiv%2FvH2UAFZAkhRdAzd7zlNug0jKWSISyLpsEciSwNRLwSkZiBy2XbbY4YZrS58A59hRHVYG8F3pPDUaQOt5lE5Im%2FxwsQz0PJ4leH9M3OopUMrBg8egZUeDuSEHeykHr3Y7cppGLQKuF4b79THi%2BbVsu2Yt76UuBMYHLQe2MeUQvLrXenNJjzrL%2Fr%2F0b0YdOaTdFvf6jeV%2BBX7IaBFsGgSuQy3zX%2F3TLhLAikASkWvwRqaHT7URybZT61aBrOtiGzYoCzn%2B%2FWfKYF%2BT4%2BPnxmugg6OjzA9FKmt5ypr7cTQOXul5zL0TIsnKv6Ywm6jSscvlqeSWdtxyvweanq%2BR627wqmuz65oub7B8Qr4b6SHIJ8tOepOgQkazfprUj7sOPpXBK16MlF%2BbWfYbd7nXH82N92sY6LxavnDrU8DzaFle%2FwQrCWBFJMGZSiDr1OUdyHqcAvow2ZHtoGY5SOWz7358mxBvHHx5cPS1Q42XVNhnuqwwxwFf0%2BBV185j%2BQRtK%2FK98S3TMm28TCvjuqztgJvgVXjDutepBmMsBxkxlhFafudNg%2BvuwHUveNV2YIv1CF7l7cx1L3j19F4f1Ghf5Hq2fEgSapav5fcEaSN1NYFV3%2Be%2BmnOOAFYCNCfUxK0CWZJobZlz57bYZDbWN01ev2kZPA5EtJN7rjOz0K%2FB0VCDDzlpE7zKPUfJOtGCWDqAy%2F3eGGUcyK17vkaumwnbu7J867XrtO6y4SvD%2FfkU%2BDxbLh%2BsPRjT%2Fel68Pvx3iJnoJfri%2BBVvu2m5VtdU7rX6y5Xt1xGOAx03JZBplDLCC3L6od2kQBWQjSQJcEbCWTJzKxlxocjnbtLDWQd6ZsHNzl%2BWTZ4zNXw7OAoxzxJdeR07tssG%2BzyeQwexNJgSFfKdOgiz2QLdL46FbxSl667T8afOtLzWKfzaXW%2BQi8jtF4%2BeF%2FjXupDv6Datlw7NEXwKv92c9STw60blJ9bjmet2xfj5YMh2q2SZf6rH4KUBLASpW8ulEDWocv7zYVy08uTWglkTTYJZOFZvt%2BkJteVvBpdgkb7le1XeQW0W80IrP53%2Bb1THYhYdIDkNbrTTM5F25xXvhvDpZ7PU92entPqVv7Ouf6NxaBSOh9BclAFmH2w0HJ6brPqvHUyiNXV4JXmMDtw%2FXK2acc%2BwDKPkGVv%2BV11Z6pduu7N5H3JUF%2FQgXoIXuXdbu7qWKpPDjbNDarL1C2v7aHxsYZYphiijbQspx%2F622%2BpFtL2bnInHb6ZJkj%2FnHEHeUsHtJ%2BLY5FjOiVBe%2B3BUduKQTow02K7qa4jfqVBWD5Xeeh%2BDXW%2FPrTcv84Hr9SR8zNDoxwMyhOJec19WXceB5Xz6OtJkMzQ2Ohaa9mpu%2FXcyZf9%2FaLluthwPwZ6Xj96LL%2Fy2PY6VI%2B1Xf6QavBq0MPBRdmuyznd3%2FD3b5zdDAJ5unwe6FwPjD5%2BWae%2B1Kf2Bz287k6KY58RjKnVrhG8ylsflqa%2FdK9vMl68cnYzoD%2Fo%2BMlKiHr8cRmhVT1g%2FDbtn2YmE8DKhCY6nz9MdqTjdOLynUa6pfs%2BKo5FKoMLkrVv1GFuM5tFbvpjiwCRdrbnup9bWgl%2FrtmI9CV45XSA9bFFIyuN%2BKnv8tLOwVS3sc6SOfEwUJNO17bRfeEz39BcOz%2BzJue2EuydVcpPBtRtG%2FSLDtVjnQxeVa7zvpIZMaNN6qTid2bF7y6dTQDocRlhk7f3JTTQmNW4n7Z6ft3Jse85bNL%2FI3iVd9vp68FnrmPGTR%2BSzI3r%2FbHR%2BQ2xfLD0ydnNVLOcRfZTjjOWEGbmyZsLz13eby6UwcxXeXMhZ%2FZFJy0qNxlUbIcIEMnAUr6n2Pa0Y7nJd%2FYpeFUuo9lv0IDca1mFOpdyHstcfG3qmEHNPDl1BzC7ns7pvh7zvcfyk%2FMsS8CbDqhzujde66B1Nnilnc9hz9uosxrLXXNfRmiZR6ROwPrM9XNGRml30%2BVFPUbwKv%2B2s1y90mdDbWdf63ctnF3u6C3DJOgfA5alZRtp2Q%2BaP%2F0PzMDKlC6%2FO36Y7EguG2nEP%2Fe8M9PVxmvQYuAXbQCsDYnMRDnVjvZBggN0mck0iVA290W5SHBDArebNIhScR%2FGGLzL%2BSn2Vb7%2F2jUPFknna%2Br5vmi7dOZez%2F%2B5cfnNtPzOat7HBK%2B%2BS3nmVRlI6Lst7YdsUp9e6O9aMF1GWFkqbGGx6eyxlv2Cppa6fVnz%2F%2F6t5RJ6logsL5omXDfERPCqG44Y2%2F3Tzm7y8GNm2L4Mnc3spZDLwE2WEWqgNWjbSAArc%2FLmPuk0Pkx2zvUm8LHsJ7QrzuSzmnZSkxgAa6VzqGujq8lmOzNAb1gumwaxpHM%2Bjn0Oawbc1jWYBxLM8dhQtk0CPg7VsdfBlQRzv7jNZk0QvPrxXCUbvNLZhQMH8bkoj%2FPXzpXWJwujzq71MsJUkreHmpGx1P2ablKmlTQCPpZPb6JO4LRPcgheLVy72d3Lrp9EvZ8%2BcznX6kfeOLsAluTBOvd8jkMuHyxZLCO0rO9v1v1HAlgdoYEsGfRMHyY7I5dPIEuWRE45gy9WNHWdpzYAllxZRUW9pwP4L30OXlUDG68EhqIHr2rs6ybXsa%2BlQ22WzkQLiOhstoWW4XP7T%2FAqgXNlXD%2B3HZjKfSTB0MXTAWrlKeiu7lvIGTFl8GKT69cy2e6Bs5uFZXm%2BpxveVwNnP%2Fuq0QxVvVcf%2B6H60OrE2QeyNgqcJmz6wv08cPVfDpLLzKtjyxe8dMQoQnCj2r7M19Q%2FZfvi84U%2FG9%2Frr%2FUjdaxxb7RfFnXZxwjXlZy3Y8%2Bf%2BcH4mvzJm9zvbs2fNNDO7u9utdxmoQGdXtM3F4boQLQxJoD1bEdVGomvNf9sWWx7fZtSr53lurnUoiwhXLPvW%2B7nwFAywSsP12Tp17bXpXbov%2BUcEKm8OfFpB8tL8Kr4%2FL9r%2Fslc83X5PMbOB69aXotNAgq1X8RReQHIKNB%2BLjQH4iZ13p8x9yGx8y0vjzgMdG%2B9Wh84j0vWNU%2BV9TLb46bLwYv9u43QR5aylaW0tQJvOuPzpQc43oNXDdqTTe2HCmDlegzFfn9z4SYiTLVPvKzZdw2dwmb7tX00riP3PN9ff7o4S0R9H8dXZ%2FNQaqn5eH%2FShSTuQ73By%2BVz0hj9%2BTDZkeTgl8V2pIGc3pE3FxabDEz2ne3rPxtfmASvXr226zolH0Re1iR2X6QYvNJ9lX08DXg9P9V06UwyAREtw3334%2FIJZl4leK5eEWppx8w1fBGHdPS1LpHrbRlgX3c3SXSr53ZmuA8Wg77oywd1wDgy3I%2BpvtDC272ngaVDZ%2FvCoZyWWc118DipW85aB2w%2Fc%2B%2BQ86pDtB4dBPiqpV6P47pLr%2FXFTZMXrslY9%2FqN4fcfeD7HsfKbffJ4HHKdWs2ofva6yjqA9TDZeanAdrWhl6cVt8Xv%2Fi2ztYrtTJbYvfK3naKBrPLNhSkNksh99bL3Pm92pKsSxJprZz9lTd9%2B2mqKcYulM7KvhykFRJ4EsQhefZdL8Mo6oFENKLS%2BdnWWwJ6ze312k47xVWbnxmr54H2N%2FIAj42vN5MGJHp9luzbQWdipKwOEyxZlea%2Bz9Y6ftHEEr7olxPJ0uV5az8SpXJMh%2BjGb1O1zw%2B%2F%2FkNk5DtFGWta9X577H7nPwNptUMgy3VE62TJD608NakkS9INiG3S5NpQ3F1YCWafO9onYJoPKc4cXO2U1f3%2FO7Kt8aSdg3zABsbf9dM0CpW0fGjSdfTVOsUy107jdheCVzAzRKeRtBtjZBK8CPR33GlBYM9PTynDD%2FZkZ9kE%2BeT7fAxfhCXPAAY9cE8eWF4UGUS2%2F41Pi1Ybv%2B1n6z2NH8Kqrhsaf77291evbuj8zeG2GrfEMX5%2Fn5SDi9TXYZLb0hqzyX734cCf3ANb7ln%2B%2FpRejDIzkNfHfNKh1rUGtYbF17vWlGsiauLiBrAvylHmvKL9QZAjkJsD1XB1ANl06M%2FP19kOjQV32deAzOdyid6YzH1zMLWbDlG%2FENG7zd%2FWa2Oj%2BNNyHQSYDjYsN77OBswuijUPcexp0mRt9%2FEHC9cXC6H6WYME2watuMb7XnTOcla7X%2Bdy4iDa5128Mz8%2FQw2eEWiL6El9Bf6v%2B0Iv9g9wDWBaFVr5Jp5pP61sX82lJAEkCWcX2q3ZqlwG%2FntlX%2Fi0pAoTQNChUY2D71KhhJ23M2TLtaPcxeCU%2BGH%2F%2B2PDelfK%2BMN7%2FTftJlvvhM6BhNbtnWSP4YBWgOQ8cALG6trf0lfQpOjS8n3kQ3D3W48wL41np1v2uTdrfeeLnJ4UZo63rSw22Doz278VJGX1bQtjUwP2cT%2Btrl%2FJpSTL1YtvWimdu%2FHVTZl%2FZdIYpAgTUpJ5oWlc2aewv6Nzb6XHwynqAMbVe8qqJdy2%2F48OG%2B7Ew3I9PHq9zqz7eVejjWeM05I2j1%2FY05nUX2GnqaQGQnPeGn720fvu28T2%2BUT9S98EqMP%2FRw2ekEGz3sYzQsi%2FUzRlYCcyEkpNezaf1dxfyaWkgq3xz4dzoa04dgNwFeWrfcDo9OfZsz0lvg1d6PVqmFgjVPlomUa9zXVjNwvK1jNByoDGtcb9ZBNGmke4%2Fq2tvmGCVQTsEy%2FqzrotAx2DZjg02nM1vVc%2FstlhNkMrywVLbByMfjfbr1ZzOv3CDe288n%2BbTus0xn5a%2BuVCCWHvObyRdAmRL2iebSp0iQEB%2FBfqeJgPIGbOvbPR85pV1PbsIOFtjavjZda4Nyxx1PoJPlh30Tc%2F10GgfbmLcQJrQ3eI6bzWwNEA7hKZjSbNrMtA9vnS2Dzk3aWPmiZ6jlF44cZDotfpq25RzAOt9BvtYTRJfzad1nUs%2BrXeTu0XlzYU%2BOrwXDjkOrICnmgxAmtR5TZaFUM8YIHhlPri4CnUQxgOMrU0DCbofVoOqjx6u94MEzrXF0rj7yC%2B4MEvgn1BdceOAenWOZT9%2BEXg5a9RZvsZL1NvUySnl6mu8jFD%2FzuqBwavtQ84BrGGm%2Bz3Qi%2FdpPq3LlPNp6ZsLJZAlCd%2BbvrlQZnXxtpQaHcyAFSpQV6iOUN3GfslbmUw61gSvVv5l%2BNnzDg2wdxPYj2HLGTmWA42ZUVmmeq09ZfXW5JTGBsm%2BARdJjxFzrO9D1zGx33TbqJ5JbPlg6VPIMtikn7hJoDXLAJYuxRu47pALeuR%2Bzqd1llo%2BrfLNhW41I%2Bu45iCW3Ff1B3shO%2BtAUhq%2BrphBg%2F%2FzIG0QwSu7YIK4jxB4tfy%2BrZr3rNV10SYIZbV8sG7uKYuBwu%2BR7yOrwW0qqzOWLB9EA4MM77m1jNuzTR%2FYWwXtmi5X%2FpTgNXdgfA5MrtNcZ2Bl%2F9a%2FDTsskiR%2BXT6tg9j5tDSQdV55c%2BHytQtS8mrRNtXrADX4myOKDR3SpK5n2YZH%2BsTwqyN4ZW3Rse%2Fc%2BHrR6yKpZYTGywdvauyH1YA2an9Mz7lFfTBI5H5eOiCt6zdGGxO7npm7tB6OHKR4zTVcRjg02p%2BNlp7mGsAauv6p5tOSoFY1n9YkZj4tfXOhBLIOX6isrhzqavKE9DOzsNAhtZ%2FwaIcFHmin5ta1y3MgA7kuBa%2Bs2trgg4vA%2BVC8dFqbDBgatolWA41lzdxTA9ddFtd8Hx5wA03q%2BxhtsFUbk8KLQmr1Tw2WD%2Fos2081j2XobPJfbZwCJNcA1nuHsmMjnazHJPFP8mkdhc6n9W5yN9M3F8pWHURK%2Fqwpp6u2JgNxqVCuKTp0qI5LOgjQVZ6CV2WdRFD9dX9F%2Bt650efW6qcZvpnOuWbBKKvlg3UHU0Ojwey8qzdSIg%2FxvjigvqjLsgz8YfS5de5xsxyLNX%2Ff5%2FJB6ev6fFnRgfGxe79O32Z6gw8dnrPrKpHph8lOeUHIxS4zemQp39JyB3Sp4Fxzd504lvQ07WAuio7YssEgXnJhSRBrzJIddKA%2Bq2NJkXkZAPoKXpUdTcnvuE%2FJ9urabXLtSHDHYhm8BKOmNa7%2FVN4%2BaHmPp9CPtuqf7Lr4SeoBpNGuWdUFsvRuUGMms8825UrbyzOPx7JbI2%2BZVaB143hBdgEsDYrwNLeeoasE%2FYoylE6DXKRf9KcEtbx3JDRQNqb4W1dSJw3%2BTipKSTI4ZkkVctRwTf7vlJyXcvcVvPqnDSo%2B96Dm0qmuXJOpd%2FSXCRWxPFG2CGA9LiOs8UDHKni1aJDY2GqgcEttB%2FRGrNnpZu3LpnW6%2FE7xuzOjel3G1tMN%2Bw4Dj987k8BZ8blyXn31Sz7VuE6GFue0Th8xxyWErG9v79V8WrGTxOMf0xZ%2FK5XlbVHByXZAUSLDeirnwXh2jIJXpcsO5OfrYrv4Ryo7ok%2ByrQZaddpAq%2BWD5AIFEMNfHTymOvEAq5VAmz5g8Lp8sDLry2ebslEbaTierPWAkwAWSgNXyaflVkGtaj6tIUUUrUM%2Fbfkxcu6ui0rnz2KTQeTIeCYBEKuuX1JszRgHr5z7vpQQ%2FelTNHFhtD91glJJdNAr9w3q93kArl2U5kafe%2BD59zZx1bJNebbN3nBsGH35oMgxB9YH7sOgA8iX8mkt3k3uSJps71grPx%2FJlEe6yYC1HPCXg%2F4vayr7%2BwZLHhAnADFwYd9YZR0EZeAW7tqxDl7904mT3Dssa16ra%2FVs07pIOuSXRtfeq0tOLJ8uN3zrIw%2BbAKAFg%2BV2%2F%2FRTX8sdZbF80PC4NllGOLRqI%2Bv8co4BLAY1cQ3dy%2Fm0FtZJ4ntY8cr6bcklZvF2wUGlYq1WSieVyrf8x6X7HuySn%2BXSk7nuJ4NS%2B0DDUBuq95VzN6BkOhsECBVoCBG8Ksks0D1eMPFzPU8pmOcrkc%2BcvvI7VssHeZkNgL7V5%2FPKGCK2G2fzQGD4St%2FTavlg6crjcUkbefzCGGTLqAwXdftA2QWw3k3u9uSnLmkb6kDOd3QTmyvzaQ3L%2F1Ccm6XezBf6RkK0bwRmRcUhHe9R5IHuuvvsRCs2%2BbHUTQKac4Ja7eisqgMdVA17dvjvCQIEu69Df9%2FJS50k9N6VswlgbfI2QovvlZnMU04rAEQzc81eivUaWRl2HqhNuXrmuEK9jdBqHFI7l9fbXK9CDYz8MzjWpOO7Wrgf9J%2BZrRVvQCQbTxw9KiqUsQaJRhmce7kPT3R%2FZ3otzAgwbEbylLnVU5thj4uB%2Bjt99w3P01Fxjd8Q4MYzbZ08sLk3qANeXEaoywct6p0ZZxUAorYri6KOXzr%2FD%2B2GL%2FTlzZYPVo4r5DJCqzROtdvIX7pyYb6b3N1LUKvYJsW2X2y%2FyrVTbIduFRmloxwey3n8V8CylHCa2W7LoEBympRJ5IecyWcbO0mw%2F03Li3JC6vX7dou2lYTueIlVO%2FfS03DePggA3WXxMGHrheTnPmdfLV7IoxjqbYQWM5SXTfJD%2FtLlq1RyMRXbrNiONaj1pvjPsgSxDAIQYLFzT4J3GxrEynX5zajYbovK%2FlaXx8GtntIU21cd1FMuSJ3U7fs6k2Xc8DNkqvqEokSADnnVxwid8zmnEwCi%2B2L0uQcN2hufbaL52wgNXxTVaN9%2F6duVK0GVYpsW21jyaWlQa18DAlKIS%2B5vbwMcGCk6xDKrcC%2Fjch7KYTCAfWwUpAwkeMXbppBL3V4Gr5w%2BOTtt%2BFknG762Gf1r4xZG%2FbEDTUT7tB5m%2BSAAdLtdkfrYIpXJhzVtysBzv372wnEtPY8HPz0zbrPQKN3Q2%2F%2F%2B339vDXbm%2BD%2F%2F7z%2FZDKwr%2BbQek7A9yaf1Xn%2BSj6UeL1Furs9XO%2Fh7mi9JEhMOMjwMGcB%2BrA6I%2B0IHUZJ4cUR1gUwsnrlXz7XD06QOklmHexQt1rhw%2FpLTVq17G%2BFHw2MAAKRhZtDvHj7Tznjre22wzM76bYQW%2Ba%2Fum85QfutsImpZB3skn5ZbBbT%2BKdSHyc5AL4xdPYlD6oBXBzpWlUKvr8%2Bn9O1G04wTf8s9JbOx9l9480WnaPDq1jHrCnnV6WsDzfLfimt6rNd07fu%2F%2BNsjnVUKPB1oWASw1r2N0GL54KJJbg8AgBmZYDEy6NcPnwRjPnn8%2BE2W1Fu%2FjdBibNl4hvIvXMebqeTTmqzJp3XuWDK3brCDgCSQVWyyHFYSK0vkfJ7R7j8GdNYt7eioa0fwCnnV5y%2FOktSOW9POyAk58bDmmlo6myV4PywjNFw%2ByOwrAL2VaLtutax7%2BOS4d0Pus%2BUyQsP8VzdN%2F%2FAtt1dzmqT8h4vlYbIz1Iu2XHrYx065BPuWXCFRO%2F3nujl9659s%2F9brcZjorpezkjq9nEjexGhwDiR4IMGF3wMeilxPI%2B64zns1eFUxds2W3Mvvy32x3%2BOO%2FrBjyb59LQmXDq7F7KjqMkKr5YPkvwLQZ8mNgXXG%2BMygXZF2ZFJpX7z1wWrM5LVaRnhgdDoa93kIYHlWyaf1qKf5tJh9lVZlPV9XSWhgqxw8lhXevyr%2FPIjQ%2BMhyorNin4%2B7eC70Sf%2FI08BIpkHPYy271OtnZPgV99y9SdTlG%2Ben046hJHRvMo19KMugdUk06AdU67ozg35TdRmhRed85imv49yRsgLoU73J7Hx7XwzqfRm%2FbGm9H3r54NP20ofqMkKL%2FFet2kgCWMY2zKe167oV1PqdM5%2B%2BJ0%2F7Z68EK%2BSaHZSVtF6vZbCr%2Bv98OCq%2B76JruUN0ycpli4%2BQukSWpEx7klfl97odjErnAX460rVfriC5rIrz8KlhJ%2FxMnoxyDoP6V%2BLtVPm0fOT5o8tlhAOj%2FtdV4ue9y7Mdl9zWyBRtX5iyssqvKA%2FifAchN57JK2MDz9%2F%2FSfuCQ4OyumnzxwSwItDldcvqRfkw2SkDWu%2Fd9xlbuZpzlrtFAybL586vDgTkmv2oQYe2AwJ5q%2BK4Y8V41KJcpK4YM7B%2F1S71jxeNglcVcu9%2BbfB3ZZD3MNF6cF7UdV28Z1InwaCRxWDD2b1ZKenlgx1brgrgZR8ifa%2FZ5Iw2qw8MAj3Vch747Is1eGDtdRlhUU5XRuexVRtEEvdESD6tYpsW23ElSbw8IZOlVFOX17I8lhD2jAx0pcNebDJwlSTysoyoTbBl1KWkzhrg%2B9zwz4%2BLcj3sYfCKYF28%2BrtN8KrsWDZ9q%2BCBLrXtmyGX3rPXk3R0lwYfXT5w8c1n8OqLYZsEAJZSfkByY%2FCZ0o7HWj5o0f4MPB%2FPP%2F3MtitJCGAlTPJpFdt5sY2LTRJb%2F%2BpWQa1TvUCXCe72QpdNor%2BDDQlmTdwqkNWmIv3coWJpOvtKZl2d9%2FRSahIIH3AHti7zfU%2FB0tMWbdQlA%2BzsBxi%2BH2RZLMk7MKozLnp83gE0ZzWui9U3SnmJusUs2V0XaflgZQy29Nz%2BjgzKqXXwkABWRiQwpEGtSbEdFtu2BgkOdbAwd%2FFnLTD7CmUlKoEsuTanLQYXXdHkCcZ5zxNaN6nLBtx5repuX8Erp5%2FT9GUMErw6SbicLHRticdfnj9vmsmxLz2%2FWGPesQEtgOf90bH73SpQ3rpe1Hp6mXKfrMUsJZ8PfCzaydbBQwJYmZN8WsU206CWLD2UWVoS1JKlXOcufD4YErjjaSMxbjj4GHRhGaG8xaNB50EardOeXzdNBoHvueOadZScx%2BBV5RzOWrRBR5U3pabE6iFR8LrOuHx9X0tLl8cDsotMrjfqSqBHIrWnqffhU85VeNXR4%2FLykIcAVgdpUOtpPi1ZghginxYzsLDOccOO%2BLADx95kJtkpCdsb1ScDiqx%2BZ8IZBK8qxi0G4SkuJVxadfQjHOtuQvfuJnJYmud14OB5NlfX2laga%2BaZ1vc%2FefL28lTb4S8JXwuN25LEH%2Fh4aSMJYPWEJon%2FJ59WJUm813xassSR0saayvS%2B4eBj0IHDr7s06N6l%2FfQk5WDBLrmT6pexZbBUO1JNAw9y%2Fx8lVl5%2FGH526KCC5bJFi2sq9Xpx3jYxbcBB7W6XXpQCdITlg8vQsy4t2zMv7bDOEk%2FxYfHCQ1tyleg17iVoSACrx9bk05Llh23yac0pVbygSTLyDx047rpPvebMvmrV0A0ptrToSx2adsZOdBluMh1Lw8%2F%2B2JUBhsXMIa0Xpwlf6leZXXMjaicgqbbSsn0JnVfWsv%2Fus5xSfDBy1dHjutegYWsEsPAPTRK%2FLp%2FWodssnxbLB%2FHa4KOP10jdGUFfuFpa1SkfKLYkjVv87WVCx7HswgBje%2Be3A2eXwN2ynr9J9Pq2nDlrlVv0kwPQhX7PRn1RrfdDtC9bxu2Zz3Y4xT5367Yk0WWE3tpIAlh4USVJ%2FNN8WmVi7kWAThb62zBnvRysYdLMXIJ85rNiigZ4nnIQALXP5bTptVbcS5NEjsPy%2FpQBxijQoXzOcACW8pKPmeHM2bnR50retSMHICXLTOv9p%2F0ws%2F6753Y4tZlKC49L0VNbRugtWEgAC7VpPq3pmnxa5O3Ba%2BquW9%2FtYRnlsnwwVHCxbr0ySGzJGb47bnF9f04oZ8%2Fc8LNPrHdeA%2BtDw6%2Bwfpg1TfDaNpsZpoMZq0HtSUp5A2VfUglWA7kP8tcYBnoboWU75rX91QcPKY1ffQadUhuXMwMLadF8WuTtAdo3prnMwPpXwp25z1xJSV7b0kYcN%2FxzGWSnspTQ8h4dBBjAnxl%2F%2Ftz481N7qrz0ldcjwkAkmftKA2m3bhVUu3RA2gaZ1p8nxvfxxNm%2BgOlLJp8Zva5PbBmh1%2Fy%2BBLAAAE2EmuXUpDE%2F4G2EaSo6MNMWHfRhIkuerDu7Zonri889M753762D8Pr5KQX6Z5lfcwex7yu93r9Vrs0RQSwkbmBYv1lOCBhaPSTR%2B9h6FvHc4DNTmam0MHiTbSoPfLzOUiaABSBlvBggXUECWA2fIEnwitwu6Tpu8bcnsZcSBphtI259B7E0v5b1fRFqIJDSLKyrQNec5aD2LGD%2BtafXpeTLuXU%2FL0sniIWUWb41dm687ye%2B73dtr26N9%2Fu%2BYW5Ui35mLm1JKsE5r%2FtBAAtASHXfENe7ZamB8hO03ceBC5tg%2F6LB36SUMwk%2Fdhalo3ja8M%2FlujtL4DCsO4WPy6l8BbH0iXuIYMBNR8p%2FU4uAy76tj%2FkydP4pnRF4%2FUJ7QhALqdo17K%2BFqEe93e9aDrcB%2BoWWdWAKb7j1fnyJBOe8zyx7m0st8TDZuXVInbypkBkzeLHBr%2Fn7uQewmux%2FDkvfQr%2FpTxr1s5plUwY6DrntknRebJ9cs2UYsuTpINBMqJc6u9b3gVzDX4tjlWDfeZP8ERoAk%2FtgGKBM7kOdE%2BkMF8c2c%2FHfOhpyJpgE8kfG3yEzM%2BRB09hgKcvTAe%2Flhve%2FBLHknI%2BpNtHA3LD%2BkyDQnsEbSJv0eYLf75qqQZYMhprxbhlkmrkAL1F5wcKwzr1ycV%2BKNff9gdkEsAJ1vtC%2Bsw27Dt%2BW4Wu6Q%2Bz%2FsME1Yvk2q38HGGQtpONd065L%2F42en0J%2BmVz3OlitO3hLIdDxYnAho6T9FudUBqRNH07JwGEeq06UXF46eyREuyedaplRKAGM6SadXF2WJfdpyABP6PvsxsUPYE0DXnPSnlgOxqv97a96vZ37vMe0H3DS4BhGOlge59wPQhSW18tA75Wxz6VtLfo8Te%2F3b8X3SV12s0l%2FSR%2BMfNL9CzX2M31AovXr0tkmoH%2BJ5cOQMiDqunJsOQWwgN4q15YXP481CXKOmgQ9Nu0QNAkChHoaUbdBlLwKk4SvxYGL8yTntGFnTgIdy9QCRZp%2FQvZt2teZBdLhbzGLppxhF7PsLly4J7blk%2B4T7WTL9jSx97%2B1rhlGLI%2BQ10%2FIIOLaQUGEYMpVoPNbXm%2Bf9R69aTp41KDVR73P2wwOH%2F%2B%2B%2BLx9glio4XdnG%2BgeaP98oX3WPzbsky5feRgRYsZllXzXSB%2B6zrWN%2BaPy%2F%2F%2Blfb%2FdSHVuiPZF6rhY%2BVMtg3NLvT5j9N1N%2Bt8EsIDEVRIjbumA1%2BUWxNJjaNIQb1Tp6dOqup8t%2BQsGlsskKscwSHC%2FmoryFEcb4GmD66i8b5IZ9Oj9UOZ16fvymGMdkDfpEEvZXVkkdd3Q1MVZcjBwcQNV68wjBYlDzVJYJ3jOFA3anbhwswS21gxs5Tz%2FpT%2Fvn%2FxuOUCyCqaWD%2FMIYmHjuilQPb1bM0AgD%2BUmL9zroWZcrjNM7BzKvX4e4HvkoVCMANYiQJ8%2F1jJCk%2F4ZSdyBhD0JXpUu9alzTpokYa37dLtJJRli%2BUmTZZAniV6PBy7ukp2mib%2FLQc9WAmU4cj8vm%2BttomLttJ22%2BIjLWOdV9%2F3cwbU8h2075VEGVBEfJJ1GPM9DHeBJG3WtdVm5Xet%2Fl21kOAhOpj5HFm2M9A1zDXaecgYfXYQIWAd422vMdixWKg2TBz0EsIBEPRO8Kh0V%2F%2F9rDm9Z04F5k6h%2F3UqvydP%2FzwE6wU0ajVFqbyN8MmsoVke0TcAg%2BqCnXDb4zD3d5yDWuWv%2BlpyBixvwPXU9fFvq0zou1iw4%2Fd5ljGOOeL9MndFT7YwQxEIW96uH%2Bm3W83MXavZVzGtlFuBaWroIbyO0yltGAAtI0CvBq2oHToJYRwkfhwzIRw0brLqV3peGg1%2FT8tNlNU0GWNepBCg3vB5zCBiU98xuhDKUWZOvBahGGpju46DsuMXfHsU4p3p%2F37t%2BPyW%2Fb3nufLjqyXf6ul%2B6giAWNnWT8b4fu34%2FJDkNvFz4S%2BDjWwRMGRK63TILzBHAAhJTM1jwmMi4%2BJtvKc3YkcBLsckxjBp%2BRJPpwvOG33WiM2NSq8Tl3F7HGphXzqUE%2BL66RN4yqtdFm3xRA7cKYk0C3wubBkp7OSjTJ81tnrJeRtz3c9ffGTGnCeTrmwb%2BvmXEvGvlNScPRlheRBALm90v0gdbZrrvyx7f63NtX0MKPQPrqsPHZhY4JoAFJKTFTJeBduK%2BBgjGvLT%2FWxoYkIDHsOHHNJourIGNpgOZS%2BOZbE3fnlJ2zkcRzmUZeEku35p2RtsOWk%2BsA78t7oW%2BDspaza4LFZR8xtj17yn5LMLg4rkBXsilEVcpFH5x3BMXYUlIgqS%2BvKYYsEH7kqWePiSR9vQwQlk3WQHSqh3tcFvJDCyg6zwt03rMU1R81p%2ByZCnU7B0Ndkig45tb5aNpcwzHLaYLtxlYnFkFALXRmDb88%2FItereaRD3EubzUczlM%2BJY59tAQD9wqUCSBrJGPgJEGcWVJW9t7oXdBLA%2Bz604iLiVcttz33CwSO96LgN81Tei4Dx052FJYxor02xe5b5cZH8Jh5vtf%2B3gjvmk01DLCRYQZzFcBj83s%2FL2lSgOS8cn5W6YlnyMzimQgLRXIXCvkhY%2BlDzqoHhbbB%2F3pa9A4a%2FNmJzm2lq8dLgOAZ1pm5RsEXyqz5YYNkDz9G7UoGzmmYbFv8l0zPZ9zHw2EDvqHeg3u5nCzyHEX%2By0DaB%2B5uQZutQRNzv2s7r2i5SfbRxf3LY1dGGTMWt7Dcu%2FuR9z3sYv8soNAAYNxxMHF2rYjULkvElgyWb3mlsU1d%2Bh%2BfrNpX8g1uK9LKoHXSKAzy9l62uc5dOnkI7U0jrxMe%2BbCrD644tiaIYAFpNM4HWtgaOT5o7d0UH2gg235sdRNOn1%2F6e%2BV%2F%2B3pwH6g%2F%2Fzvyr8PDIpAvtvHE%2F1T137m0A9l5l5%2By5l832TDgYZMA2%2B7VHGgn3Gk57M8b9UnRs81%2FNVyea%2FHOcz4nlkUx7%2FvuUP33L3y3HViFfBb6MCsj7MrpB741vBvJch7FGtpmwTgi%2B%2F%2FYFCPEzB4fXA3DVDuF6mdEH1w04fAKXUk2t4rM31IdZDp%2Flv0eVJz3uZBtqdylv76wtk%2F0J1xbM0QwALSapzGRcXyh7N%2FLfxAt1SCF49r3X10RLUzn2oH5VT3a2B8Lk96dM8sdPB2bXyvMDAL28E6bXEdy1LCWayZMlqPyz%2BOOnZqUp%2FtchOgzGeJ3jNTveb6EsSau7hLjJCvsfaXsgwAdTyINZWH%2BQm1J5ZBnpizea%2BMj21pfWzkwALSa5wmrl95LSwGRUkmVNbOdlfO7X1C5SqDyr2OlOvMMaugrAebdoC2Yg%2FkJYjl2r1VsQ%2F1tEU9YNlpnqZ8X%2BqshT68TEDOAzOv0KYftp%2FzfaL18H7H7vVTbTdT6otZuurwsZk%2F6CGABaTbEZcB%2Bbzjh7q0GBRVAkWpdjxyT%2Fac3DF0pEMnAzNmFXzX5hobhnjpwSvX5LHrRmL3hcsnz5Blx%2Fkm9YPXIFbXBralMvdan16WALv%2BQtYPEyt9nmVH7utJguVrWbaziMe2dLZvIzRvKwlgAek2TjIFUxqn4452RufFtmc1KNIEkONEz%2B3M5fukfJ7qAEmvpW2XZ%2BD3mIHZ2nt42uIjLmO%2FxVEDCnsZDzLKGYG5JMm2eqp9r%2FV2LgPbXOvB5yy0vzB1gL%2F2pQszsfZcokubN7DU9iXV%2B9qqXFN4GYhlW2ne9hDAAtJvoM4zb6B%2Bqtx0sG6%2BBKCypCLF8zrNsPOU%2FNIN2TcN%2FJ5m1IHbi5V0PANtAvjRlxI%2BGWTkNPgu8xJmNSNQy9oi2JbTuavWg7k%2FAJN9l6VFeym9%2FRGd6V%2BXs5gWGR%2BD3OuHGd7r587wIbYnX4w%2B9yqBY5tl9rk%2FIIAF5NFALbWBkoZ2nvGhTEMP1lOeAVEZ2KZ%2BTsvB7Dije2bi0p%2BFkEMHLnrn3LULRh5s7%2Fw2TGSQMXZ5LPmQOnM7lxlHgQYHV5neP%2BdaD04z7i9MqAlh3A%2Fbd5nnLMzoYXe5JP049Ycj2gZa7OMsgWNbOpvAbZCl9gSwgLwaqLk%2BVd3PrENaLkMZx3iKWgkUnSd4TlNfKjrTQcQsw%2FtlWblf5nTgsu6Ytzl%2F0ZcSPqnDJaAgwaxlgvf6ttbTWeeS8%2Fx5y5yDzJXgaS6BrGnlOlw6IMw9cuwyzz2b%2BMNuuZfHOpsypzL23fddJFSvWTyYCXJuCWABeTZSc%2B2Q%2FupWgY8UO9cyADrXjuhh7Aar0kFJshNfeVJ%2B6tIIZMn52tdzt%2BzA%2FZJCIGuRaQcuBW1erT0otpPErslpJZAVs%2F6%2BrwQMDrsQMNDgm89Bx0VH%2Bg3LSr%2Fh1KUVQK32FwhcIdY9stC%2BQrnk%2Bz7T40jpYbf0daRt2c40h53vZYQpzeb1HZybhXr4RQALyLyjLoEPGRC7VfDj2MWdmrrUxlIaq191hskysTKrduLHLqHp1no%2BJ3ouYwxsy8Hsnua6mnfsfik7deW9sghYpvsauJo6NBpYuHZLCY9SWEq45rimlfr7PGBQoXyRRFcDBjeey6pr%2FYaJBlDLmckxgqj3qfcX0N%2F2pjJrcazX6TLD45hH6u8utI%2B1rX3JnOvQWeKf12o85LnuD%2Fam3rcZXUCnDqmj4xG%2FIjrXzelgbbfY3rvVDASLwdtcK7%2Ff5Z9z6nzqU4KpblJeu1pOuw3KwGzfdOnTgZ7HXYPzWJ7DLzU7GcsG9fI8tXulKN%2Fy3vig5bsbsUxjtJU51dttlwAPEq%2B%2FpcN%2FbHBN3pfXo1stX%2BhUQOaZ8pS685OPgViXgyrVpPd63e0%2Bue58Lr1dPOkvpDBz3GofunLNnPa5fNb0E7f0vhg8aU%2FeN7hXljGOQ4%2Bh2r4MPd7bX3IbC2xSdkWZnXvqGy4TLBuZYfzJ02cF6%2BO%2F%2Be%2F%2F%2Ffdvg8%2Fd%2F8%2F%2F%2B8%2FcAS1xffpVaXzdM53TD0%2F%2B%2FcuaRupeO%2FXk7ol3HsvO09aaRvVpR0rO2V9POk3LRBvSVMq37NBVO3b%2FftJh%2FbImQECZItY1ea%2BBAe5zWPUZhq%2B0Nc%2F1F7gGgTz6lE%2FHBR%2Be6UuWfZ57XkKDGAhgIWlcnwAAAAAAgBxYAAAAAAAASBoBLAAAAAAAACSNABYAAAAAAACSRgALAAAAAAAASSOABQAAAAAAgKQRwAIAAAAAAEDSCGABAAAAAAAgaQSwAAAAAAAAkDQCWAAAAAAAAEgaASwAAAAAAAAkjQAWAAAAAAAAkkYACwAAAAAAAEkjgAUAAAAAAICkEcACAAAAAABA0ghgAQAAAAAAIGlvKQLAxt9%2F%2F00hAACCefPmDYUAAAA6ixlYAAAAAAAASBoBLAAAAAAAACTNagnh2X%2F%2F77%2F3FC8AAAAAAADasgpg7VK0AAAAAAAA8IElhAAAAAAAAEgaASwAAAAAAAAkjQAWAAAAAAAAkkYACwAAAAAAAEkjgAUAAAAAAICkEcACAAAAAABA0ghgAQAAAAAAIGkEsAAAAAAAAJA0AlgAAAAAAABIGgEsAAAAAAAAJI0AFgAAAAAAAJJGAAsAAAAAAABJI4AFAAAAAACApBHAAgAAAAAAQNIIYAEAAAAAACBpBLAAAAAAAACQNAJYAAAAAAAASBoBLAAAAAAAACSNABYAAAAAAACS9rbYTikG9MySIgAAAAAAIB9vKALAxt9%2F%2F00hAADCdere0K0DAADdxRJCAAAAAAAAJI0AFgAAAAAAAJJGAAsAAAAAAABJI4AFAAAAAACApBHAAgAAAAAAQNIIYAEAAAAAACBpBLAAAAAAAACQNAJYAAAAAAAASBoBLAAAAAAAACSNABYAAAAAAACSRgALAAAAAAAASSOABQAAAAAAgKQRwAIAAAAAAEDSCGABAAAAAAAgaQSwAAAAAAAAkDQCWAAAAAAAAEgaASwAAAAAAAAkjQAWAAAAAAAAkkYACwAAAAAAAEkjgAUAAAAAAICkEcACAAAAAABA0ghgAQAAAAAAIGkEsAAAAAAAAJA0AlgAAAAAAABIGgEsAAAAAAAAJI0AFgAAAAAAAJJGAAsAAAAAAABJI4AFAAAAAACApBHAAgAAAAAAQNIIYAEAAAAAACBpBLAAAAAAAACQNAJYAAAAAAAASBoBLAAAAAAAACSNABYAAAAAAACSRgALAAAAAAAASSOABQAAAAAAgKQRwAIAAAAAAEDSCGABAAAAAAAgaQSwAAAAAAAAkDQCWAAAAAAAAEgaASwAAAAAAAAkjQAWAAAAAAAAkkYACwAAAAAAAEkjgAUAAAAAAICkEcACAAAAAABA0ghgAQAAAAAAIGkEsAAAAAAAAJA0AlgAAAAAAABIGgEsAAAAAAAAJO3%2FCzAAHWg3Sp0%2FzLEAAAAASUVORK5CYII%3D%29%3B%0Abackground%2Dsize%3A%20contain%3B%0Apadding%2Dtop%3A%2080px%20%21important%3B%0Abackground%2Drepeat%3A%20no%2Drepeat%3B%0A%7D%0A%3C%2Fstyle%3E%0A" rel="stylesheet" type="text/css" />
 
 
 
@@ -1511,1159 +1510,1375 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">CARICOM RBM</h1>
-<h4 class="author">Lothar Mateo Rojas Sosa</h4>
-<h4 class="date">10 February 2022</h4>
+<h1 class="title toc-ignore">CXC - RBM Diagnosis</h1>
+<h4 class="author">CLEAR LAC</h4>
+<h4 class="date">18 February 2022</h4>
 
 </div>
 
 
-<pre class="r"><code>for ( i in 1:4){
-  
-  stage_1 &lt;- RBM_ideal %&gt;% 
-            filter( dimension == i)
-  
-  cat(paste0( &quot;# &quot;, stage_1$dimension_d[1], &quot; \n\n&quot;))
-  
-  for( j in min(stage_1$bullet_id):max(stage_1$bullet_id)){
-    
-    
-    stage_2 &lt;- stage_1 %&gt;% 
-            filter( bullet_id == j)
-    
-    cat(paste0( &quot;### &quot;, filter(stage_2, sub_id == 0)$indicator[1], &quot; {.tabset .tabset-pills} \n\n&quot;))
-    
-    
-    for( k in 1:max(stage_2$sub_id)){
-      
-      stage_3 &lt;- RBM_full %&gt;% 
-            filter( dimension == i) %&gt;% 
-            filter( bullet_id == j) %&gt;% 
-            filter( sub_id == k)
-      
-      cat(paste0( &quot;#### Sub-dimension  &quot;,k, &quot; {-} \n\n&quot;))
-      
-      cat(paste0( &quot; &gt; &quot;, stage_3$indicator[1]), &quot;\n\n&quot;)
-      
-      cat(paste0(&quot;- &quot;, stage_3$comment ), sep = &quot;\n\n&quot;)
-      cat(&quot;\n\n&quot;)
-      
-    }
-    
-    cat(paste0( &quot;### {-}&quot;, &quot; \n\n&quot;))
-    
-    
-  }
-  
-  
-  
-  
-}</code></pre>
+<hr />
 <div id="institutionalization" class="section level1">
-<h1><span class="header-section-number">1</span> Institutionalization</h1>
-<div id="there-is-a-documented-approved-and-binding-rbm-policy-within-the-government" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">1.0.1</span> There is a documented, approved and binding RBM Policy within the government</h3>
-<div id="sub-dimension-1" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<h1>Institutionalization</h1>
+<div id="there-is-a-documented-approved-and-binding-rbm-policy-within-the-regional-institution-ri-or-a-caricom-rbm-general-policy-for-all-ris" class="section level3 tabset tabset-pills">
+<h3>1. There is a documented, approved and binding RBM Policy within the Regional Institution (RI) or a CARICOM RBM general policy for all RIs:</h3>
+<p>The <strong>Strategic Management Framework</strong> is considered CXC’s RBM policy. The Corporate Planning and Strategy Management Unit (CPSM) developed the framework but incorporated the input of different units and committees. The steps of the process are:</p>
+<ul>
+<li><p>A. ASSESSMENT: collect and evaluate information that helps in analyzing the factors that may influence an organization (political, economic, social, technology, legal, safety, regulatory, demographic, the capacity to deliver intended products and services, business processes, staffing and skills, assets like building and equipment, financial resources)</p></li>
+<li><p>B. STRATEGY FORMULATION: After environmental scanning, managers formulate corporate, business, and functional strategies. This step identifies objectives, KPIs, and Initiatives at the Corporate and Operational levels.</p></li>
+<li><p>C. STRATEGY IMPLEMENTATION: make the strategy “work as intended.” Managing resources.</p></li>
+<li><p>D. STRATEGY EVALUATION: they evaluate to what degree the action plans have been successful and make remedial and corrective actions. </p></li>
+</ul>
+<p>However, the Strategy Officer &amp; Human Resource Manager does not think an RBM policy is standardized within the regional institution; it is perceived as an informal policy and not documented. In addition, there will be a Corporate Performance Framework that’s not the same as the Strategic Management Framework, but it’s not available yet.</p>
+<div id="sub-element-1" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
-<p>It is relevant across the government at all levels</p>
+<p>It outlines guiding principles / pillars that are aligned to a results-oriented approach</p>
 </blockquote>
 <ul>
-<li><p>RBM in legally embeded at secondary and subordinate legislation level. Links or refferences to that legislation are not available since we only have policy documents which are not considered legislation. They are approved by the government. They are the National Resilience Development Strategy 2018-2030; and the Climate Resilience and Recovery Plan 2020-2030 www.planning.gov.dm </p></li>
-<li><p>Stages of developping and approving the National Resilience Development Strategy 2030. The following MDA’s and actors are involved in the development and approval of the plan: - All MDAs provide input into the NRDS, Validate various dras of document - External partners provide feedback on dra document ( The International Monetary Fund was engaged to craft the Disaster Resilince Strategy) - Societal groups and business organizations provide input in document - Cabinet approve draft strategy for onward approval of Parliament - Parliment approves strategy  </p></li>
+<li>The Strategic Management Framework (CXC’s RBM policy) aligns outlines guiding principles/pillars to a results-oriented approach</li>
 </ul>
 </div>
-<div id="sub-dimension-2" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>NA</p>
+<p>It communicates what RBM entails (i.e., clear definitions for key concepts) and clearly states how it works</p>
 </blockquote>
 <ul>
-<li></li>
-</ul>
-</div>
-<div id="sub-dimension-3" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
-<blockquote>
-<p>NA</p>
-</blockquote>
+<li><p>The Strategic Management Framework (CXC’s RBM policy) communicates what RBM entails (i.e., clear definitions for key concepts) and clearly states how it works</p></li>
+<li><p>Definitions from the Strategic Management Framework: </p>
 <ul>
-<li></li>
+<li><p>Balance Scorecard (BSC): strategic planning and management tool that helps clarify strategy,</p></li>
+<li><p>monitor progress and define and manage action plans. They employ strategy maps and require 4 perspectives (i.e., finance/ Stewardship, Customer/ Stakeholder, Internal Process, and Learning &amp; Growth/ Organizational Capacity.)</p></li>
+<li><p>IP’s: Key Performance Indicators of progress.</p></li>
+</ul></li>
+<li><p>The plan was shared and reviewed internally and externally, so everyone knows how CXC monitors and evaluates.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-4" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-3" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>It identifies key actors who are responsible for supervising and measuring the results and implementation of the RBM policy and their functions</p>
 </blockquote>
 <ul>
-<li><p>We submit policy papers for every program that we prepare to undertake, that we plan for. We prepare policy papers, policy briefs or concept papers that we deliver to the policy board for approval. (Approves across government) . ONly when it is approved, they more forward to implementation </p></li>
-<li><p>Some documents created regarding the NRDS 2030 and the MDA in charge: - Progress reports on national development programmes and projects are produces by the MDA responsible for implementation. The document is directed for the Ministry of Planning, Cabinet (for strategic priority initiatives) Reports are submitted for the attention of the Public Sector Investment Programme Unit- Public Sector Investmennt Programme Performance Reports are produced by the Ministry of Planning and are meant for the Misnitry of Finance and Cabinet. The reports are prepared monthly and on an cumulative basis- Economic and Socila Review are produced by the Ministry of Planning and it is meant for all MDAs, Cabinet, Parliament, Public. Reviews the implementation of programmes and projects for a given fiscal year. These programmes and projects are aligned to the NRDS.Prepared in the last quarter of the fiscal year. This one is available in <a href="https://dominica.gov.dm/government-publications/national-development-strategies/economic-and-social-review" class="uri">https://dominica.gov.dm/government-publications/national-development-strategies/economic-and-social-review</a>  </p></li>
+<li><p>The Strategic Management Framework (CXC’s RBM policy) identifies key actors who are responsible for supervising and measuring the results and implementation of the RBM policy and their functions</p></li>
+<li><p>CXC reports on the evaluations biannually and discusses results and feedback. Then, CXC has a cycle of meetings to identify points and follow-up.        </p></li>
 </ul>
 </div>
-<div id="sub-dimension-5" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
+<div id="sub-element-4" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>It identifies key actors who are responsible for the supervision and coordination of the RBM policy</p>
+<p>It identifies key actors within the regional institution, CARICOM Organs and Bodies who are responsible for the supervision and coordination of the RBM policy</p>
 </blockquote>
 <ul>
-<li><p>CREAD recommendations are not biding to the Cabinet. If CREAD approves something, it’s only binding for CREAD adn they would have to implement it in collaboration of public service agencies for it to be valid everywhere.  </p></li>
-<li><p>Some documents created regarding the CRRP 2020- 2030 and the MDA in charge:- CREAD producs the Policy Papers and they are meand for the CREAD policy board and the cabinet  </p></li>
+<li><p>The Strategic Management Framework (CXC’s RBM policy) identifies key actors within the regional institution, CARICOM Organs, and Bodies who are responsible for the supervision and coordination of the RBM policy </p></li>
+<li><p>The different units, committees, and stakeholders involved in the development process are the following:</p></li>
+<li><p>The planning is based on what CARICOM intends to achieve in education for its member states. Given the nature of the institution, it is essential to coordinate with CARICOM.</p>
+<ul>
+<li><p>Examination Administration and Security –&gt; Senior Manager</p></li>
+<li><p>Examination Development and Production –&gt; Senior Manager</p></li>
+<li><p>Examination Services Division –&gt; Director of Operations</p></li>
+<li><p>Corporate Services Division –&gt; Director of Corporate Services</p></li>
+<li><p>Finance and Office Management –&gt; Financial Controller</p></li>
+<li><p>Human Resources Department –&gt; Senior Manager</p></li>
+<li><p>Information Technology (Operations) –&gt; Senior Manager</p></li>
+<li><p>Information Technology (Enterprise.) –&gt; Senior Manager</p></li>
+<li><p>Archive and Records Manager –&gt; Manager </p></li>
+</ul></li>
 </ul>
 </div>
-<div id="sub-dimension-6" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
+<div id="sub-element-5" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
 <blockquote>
 <p>It is use-oriented in planning, budgeting and implementing towards results</p>
 </blockquote>
 <ul>
-<li>Some documents created regarding the NRDS 2030 and the MDA in charge: - Progress reports on national development programmes and projects are produces by the MDA responsible for implementation. The document is directed for the Ministry of Planning, Cabinet (for strategic priority initiatives) Reports are submitted for the attention of the Public Sector Investment Programme Unit- Public Sector Investmennt Programme Performance Reports are produced by the Ministry of Planning and are meant for the Misnitry of Finance and Cabinet. The reports are prepared monthly and on an cumulative basis- Economic and Socila Review are produced by the Ministry of Planning and it is meant for all MDAs, Cabinet, Parliament, Public. Reviews the implementation of programmes and projects for a given fiscal year. These programmes and projects are aligned to the NRDS.Prepared in the last quarter of the fiscal year. This one is available in <a href="https://dominica.gov.dm/government-publications/national-development-strategies/economic-and-social-review" class="uri">https://dominica.gov.dm/government-publications/national-development-strategies/economic-and-social-review</a>  </li>
+<li>The Strategic Management Framework (CXC’s RBM policy) is use-oriented in planning, budgeting, and implementing towards results</li>
 </ul>
 </div>
-<div id="sub-dimension-7" class="section level4 unnumbered">
-<h4>Sub-dimension 7</h4>
+<div id="sub-element-6" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
 <blockquote>
-<p>NA</p>
+<p>(If more than one) They are consistent with each other</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
 </div>
 </div>
-<div id="section" class="section level3 unnumbered">
-<h3></h3>
-</div>
-<div id="there-are-lawsregulationsnorms-recognizing-me-activities-across-the-government" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">1.0.2</span> There are laws/regulations/norms* recognizing M&amp;E activities across the government</h3>
-<div id="sub-dimension-1-1" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
-<blockquote>
-<p>They are aditional to the RBM Policy</p>
-</blockquote>
-<ul>
-<li>Policy. evaluations is legally embedded at secondary/ subordinate legislation level. It is additioinal to teh RBM policy. </li>
-</ul>
-</div>
-<div id="sub-dimension-2-1" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
-<blockquote>
-<p>They delegate M&amp;E responsibilities to a single national body or to multiple MDAs</p>
-</blockquote>
-<ul>
-<li><p>There are laws and regulations delegating RBM responsabilities: - CREAD is in charge of implementing large capital prpjects and capacity enhancement. - Ministry of Planning - oversight of the PSIP and enforcement of the national development framework - all line ministries for executing their mandates </p></li>
-<li><p>The link with the legal framework that delegates responsibilities is the following: www.dominica.gov.dm; www.planning.gov.dm </p></li>
-</ul>
-</div>
-<div id="sub-dimension-3-1" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
-<blockquote>
-<p>It is relevant across the government at all levels and branches (i.e. scope of action) and defines the M&amp;E subjects</p>
-</blockquote>
-<ul>
-<li><p>More and more stakeholders are holding the government to the task of insitutionalizing an RBM policy  </p></li>
-<li><p>RBM mandates are binding across the government at all levels. They all have to oversight the project management process and support development policies.  </p></li>
-</ul>
-</div>
-<div id="sub-dimension-4-1" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
-<blockquote>
-<p>NA</p>
-</blockquote>
-<ul>
-<li></li>
-</ul>
-</div>
-<div id="sub-dimension-5-1" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
-<blockquote>
-<p>NA</p>
-</blockquote>
-<ul>
-<li></li>
-</ul>
-</div>
-<div id="sub-dimension-6-1" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
-<blockquote>
-<p>It stablishes the need to designate focal points in each MDA across government</p>
-</blockquote>
-<ul>
-<li>Some time ago we commenced a process whereby we aimed to develop a document standard operational procedures for the PSIP. We made some progress, but it’s not completed</li>
-</ul>
-</div>
-</div>
-<div id="section-1" class="section level3 unnumbered">
+<div id="section" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
 <div id="there-are-guidelines-that-establish-the-rules-and-processes-to-perform-monitoring-activities" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">1.0.3</span> There are guidelines that establish the rules and processes to perform monitoring activities</h3>
-<div id="sub-dimension-1-2" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<h3>2. There are guidelines that establish the rules and processes to perform monitoring activities:</h3>
+<p>There are no specific guidelines guiding CXC’s monitoring activities, but the Strategic Management Framework outlines a general monitoring process. Also, CXC has defined key performance indicators and initiatives that are tracked periodically.</p>
+<p>Atiba provided a link with the procedures that establish the rules to perform monitoring activities within CXC, but an institutional email is required: <a href="https://cxccorporate-my.sharepoint.com/:b:/g/personal/agriffith_cxc_org/EXRnTA2zhpJJsSDJUcDBI4gB4m_CRzqT7i0s6rSln2S2lQ?e=3Auqqu">guidelines</a></p>
+<div id="sub-element-1-1" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
-<p>They identify indicator types and the dimensions they want to measure (e.g., efficiency, efficacy), and monitoring tools (e.g., logic framework) to be developed for each project / social programme</p>
+<p>They identify indicators types and the dimensions they want to measure (e.g. efficiency, efficacy) , and monitoring tools (e.g. logic framework) to be developed for each project / social programme</p>
 </blockquote>
 <ul>
-<li>The two main monitoring tools that are alignes with Dominica’s National Plan are the following: the Results Monitoring Matrix (RMM) of the National Resilience Development Strategy (NRDS) and the Results Framework (RF) of the Climate Resilience Recovery Plan (CRRP). There is no specific tool used by any specific MDA </li>
+<li><p>The guidelines identify indicators types and the dimensions they want to measure (e.g., efficiency, efficacy) and develops for each project/social program monitoring tools (e.g., logic framework, balanced scorecard). For example, the Strategic Management framework speaks to the BSC Methodology, the initiative Management procedure speaks to the management of strategic initiatives.</p></li>
+<li><p>As the BSC is “cascaded down” in the organization, the KPIs will be operated and then monitored by its progress towards the organization’s goals and objectives (the KPIs aren’t monitored frequently, but CXC remarks the importance of monitoring).</p></li>
+<li><p>Operational KPIs, typically found on Divisional/ Departmental BSCs, allow management to assess what is happening in the business more frequently, e.g., daily, weekly, or monthly. In addition, they offer information about where systems or processes are falling for management to take corrective action quickly to keep the organization on strategy.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-2-2" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-1" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>They identify specific timeframes to collect indicator data and develop monitoring tools to measure the indicators (e.g., collect every six months) for each project</p>
+<p>They identify specific timeframes to collect indicator data and develop monitoring tools to measure the indicators (e.g. collect every six months) for each project</p>
 </blockquote>
 <ul>
-<li><p>The monitoring operative handbooks: -identify the relevant activities to develop each stage of the evaluation process (apart from the results monitoring matrix in the NRDS, a document awaits policy approval) -identify the responsible (specific MDAs and units within the MDAs) in every stage of the process - outline specific timeframes to implement every stage of the monitoring process - outline a dissemination strategy of the monitoring results </p></li>
-<li><p>Implementation of the NRDS’s Results Monitoring Matrix; Identify MDA’s and their roles - CREAD –&gt; Monitoring the implementation of the CRRP; implementing projects, sourcing donor funds and building capacity in the public service - Ministry of Planning –&gt; Largely responsible for ensuring that the goals and target setforth in the CRRP are realized within the given timeframe - Line Ministries –&gt; Implementation of specific targets, actions and initiatives - Ministry of Finance –&gt; Providing budgetary support</p></li>
+<li><p>The guidelines identify specific timeframes to collect indicator data and develop monitoring tools to measure the indicators (e.g., collect every six months) for each project. There is a schedule for reporting on KPIs.</p></li>
+<li><p>CXC will monitor and evaluate with periodic status reports and Management Review meetings. The Senior Management team will hold these review meetings to discuss the achievement of the strategy through a review of KPI Achievement. Review meetings should also be held at the Divisional/ Departmental level to ensure that progress against the BSC is reviewed and necessary action is taken when targets are not achieved. </p></li>
 </ul>
 </div>
-<div id="sub-dimension-3-2" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-1" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>They have criteria to ensure data collection quality (design, measurement, report)</p>
 </blockquote>
 <ul>
-<li>There is a Results Monitoring Matrix with a set of indicators in the NRDS and we are in the process of developping a proper framework for M&amp;E CREAD and the Ministry of Planning are developing an M&amp;E framework: Within the CRRP there are key pillars, key targets, the key results areas. It goes down to activities and It cascades downwards to the point where every individual will be able to see its role. It is expected that the framework will be ready by July 2022 and implemented within the next fiscal year </li>
+<li>The guidelines have criteria to ensure data collection quality (design, measurement, report, templates). </li>
 </ul>
 </div>
-<div id="sub-dimension-4-2" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-1" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>NA</p>
+<p>They integrate the indicators as a monitoring system</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>The guidelines integrate the indicators as a monitoring system (i.e., Quick Score Tool/Spider Impact System).</p></li>
+<li><p>CXC has a  <em>Strategic Management Framework</em> on monitoring and evaluating:</p>
+<ul>
+<li><p>CPSM generates reports weekly adn annualy. </p></li>
+<li><p>The annual reports go to the administrative and finance committee and council. </p></li>
+</ul></li>
+<li><p>CXC reports on the evaluations biannually and discusses results and feedback. Then, CXC has a cycle of meetings to identify points and follow-up.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-5-2" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
+<div id="sub-element-5-1" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
 <blockquote>
 <p>The monitoring system has a stablished process to update its information periodically</p>
 </blockquote>
 <ul>
-<li><p>A tool is being developed currently to digitize the monitoring process and can be submitted upon completion. Meanwhile forms are utilized for reporting</p></li>
-<li><p>Ministries are supposed to provide with infomration on progress towards the achievements of outputs monthly  </p></li>
+<li><p>The monitoring system has an established process to update its information periodically. There is a schedule for reporting on KPIs</p></li>
+<li><p>CXC has a  <em>Strategic Management Framework</em> on monitoring and evaluating:</p>
+<ul>
+<li><p>CPSM generates reports weekly adn annualy. </p></li>
+<li><p>The annual reports go to the administrative and finance committee and council. </p></li>
+</ul></li>
+<li><p>The annual report is the beginning of the monitoring process : Assessment(documented in the SMG and SP).</p></li>
+<li><p>CXC reports on the evaluations biannually and discusses results and feedback. Then, CXC has a cycle of meetings to identify points and follow-up.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-6-2" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
+<div id="sub-element-6-1" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
 <blockquote>
-<p>NA</p>
+<p>The monitoring system has a stablished process to update its indicators periodically</p>
 </blockquote>
 <ul>
-<li></li>
+<li>The monitoring system has a regular process to update its indicators periodically</li>
 </ul>
 </div>
-<div id="sub-dimension-7-1" class="section level4 unnumbered">
-<h4>Sub-dimension 7</h4>
+<div id="sub-element-7" class="section level4 unnumbered">
+<h4>Sub-element 7</h4>
 <blockquote>
-<p>NA</p>
+<p>There are rules providing all parts in the monitoring process with a way of presenting their opinion (i.e. institutional positions)</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>There are NO rules provide all parts in the monitoring process with a way of presenting their opinion (i.e., institutional positions)</p></li>
+<li><p>The plan was shared and reviewed internally and externally, so everyone knows how CXC monitors and evaluates.</p></li>
 </ul>
 </div>
 </div>
-<div id="section-2" class="section level3 unnumbered">
+<div id="section-1" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
 <div id="there-are-guidelines-that-establish-the-rules-and-processes-to-perform-evaluation-activities" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">1.0.4</span> There are guidelines that establish the rules and processes to perform evaluation activities</h3>
-<div id="sub-dimension-1-3" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<h3>3. There are guidelines that establish the rules and processes to perform evaluation activities:</h3>
+<p>Although the Strategic Management Framework has a Strategic Evaluation section, there are no specific guidelines guiding CXC’s evaluation activities. However, the monitoring of key performance indicators seems to be considered evaluation.</p>
+<p>There is a draft or operative handbook to implement the evaluation activities. It’s needed an institutional email to access the <a href="https://cxccorporate-my.sharepoint.com/:b:/g/personal/agriffith_cxc_org/EXRnTA2zhpJJsSDJUcDBI4gB4m_CRzqT7i0s6rSln2S2lQ?e=3Auqqu">draft</a></p>
+<p>CXC evaluates its initiatives and programs, but the results are not public. CXC and the private sector perform this evaluation. (no universities, CSOs, or funders/donors) CHECK</p>
+<div id="sub-element-1-2" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
 <p>They identify key stakeholders to be part of the evaluation process (e.g. evaluation process coordinators, evaluation subjects, evaluation process implementators)</p>
 </blockquote>
 <ul>
-<li><p>There is a Results Monitoring Matrix with a set of indicators in the NRDS and we are in the process of developping a proper framework for M&amp;E CREAD and the Ministry of Planning are developing an M&amp;E framework: Within the CRRP there are key pillars, key targets, the key results areas. It goes down to activities and It cascades downwards to the point where every individual will be able to see its role. It is expected that the framework will be ready by July 2022 and implemented within the next fiscal year </p></li>
-<li><p>Some external institutions pr stakeholders perform evaluations: World Bank, other donors, NGOs </p></li>
-<li><p>Implementation of the NRDS’s Results Monitoring Matrix; Identify MDA’s and their roles - CREAD –&gt; Monitoring the implementation of the CRRP; implementing projects, sourcing donor funds and building capacity in the public service - Ministry of Planning –&gt; Largely responsible for ensuring that the goals and target setforth in the CRRP are realized within the given timeframe - Line Ministries –&gt; Implementation of specific targets, actions and initiatives - Ministry of Finance –&gt; Providing budgetary support</p></li>
-<li><p>Mrs. Andrew mentions that the internal procedures of the Ministry of Planning involve M&amp;E activities, but she doesn’t know of a law that mandates M&amp;E activities in the public sector </p></li>
+<li><p>The handbook identifies the responsible in every stage of the evaluation process</p></li>
+<li><p>The handbook outlines a dissemination strategy of the evaluation results (what, how, when, and to whom do you want to diffuse results) </p></li>
+<li><p>A lot of stakeholders don’ know there is an existing RBM system. We want to create a platform</p></li>
+<li><p>CXC will monitor and evaluate with periodic status reports and Management Review meetings. The Senior Management team will hold these review meetings to discuss the achievement of the strategy through a review of KPI Achievement. Review meetings should also be held at the Divisional/ Departmental level to ensure that progress against the BSC is reviewed and necessary action is taken when targets are not achieved. </p></li>
 </ul>
 </div>
-<div id="sub-dimension-2-3" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-2" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
 <p>They identify specific evaluation types</p>
 </blockquote>
-<ul>
-<li>There is a framwork regulationg and guiding the evaluation activities of public policy in Dominica - the recognize at which levels the guidelines are binding (ministry mandates, projects, strategic policy)- They identify key stakeholders to be part of the evaluation process (ministry implementation plans and work plans) - They identify specific evaluation types - they dientify specific timeframws for each evaluation type - They establish an iterative process of evaluation - They outline the operationalization process of the national evaluation agenda - There are rules providing all parts in the evaluation process with a way of presenting their opinion </li>
-</ul>
 </div>
-<div id="sub-dimension-3-3" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-2" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>The identify specific timeframes for each evaluation type</p>
 </blockquote>
 <ul>
-<li>There is a framwork regulationg and guiding the evaluation activities of public policy in Dominica - the recognize at which levels the guidelines are binding (ministry mandates, projects, strategic policy)- They identify key stakeholders to be part of the evaluation process (ministry implementation plans and work plans) - They identify specific evaluation types - they dientify specific timeframws for each evaluation type - They establish an iterative process of evaluation - They outline the operationalization process of the national evaluation agenda - There are rules providing all parts in the evaluation process with a way of presenting their opinion </li>
+<li><p>CXC has a  <em>Strategic Management Framework</em> on monitoring and evaluating:</p></li>
+<li><p>The handbook outlines specific timeframes to implement every step of the evaluation process</p>
+<ul>
+<li><p>Weekly, CPSM generates reports. </p></li>
+<li><p>Annually, reports go to the administrative and finance committee and council. </p></li>
+</ul></li>
 </ul>
 </div>
-<div id="sub-dimension-4-3" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-2" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
 <p>They identify specific characteristics and functions of evaluators</p>
 </blockquote>
-<ul>
-<li>There is a framwork regulationg and guiding the evaluation activities of public policy in Dominica - the recognize at which levels the guidelines are binding (ministry mandates, projects, strategic policy)- They identify key stakeholders to be part of the evaluation process (ministry implementation plans and work plans) - They identify specific evaluation types - they dientify specific timeframws for each evaluation type - They establish an iterative process of evaluation - They outline the operationalization process of the national evaluation agenda - There are rules providing all parts in the evaluation process with a way of presenting their opinion </li>
-</ul>
 </div>
-<div id="sub-dimension-5-3" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
+<div id="sub-element-5-2" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
 <blockquote>
 <p>It establishes an iterative process of evaluation (i.e. is not a one-time exercise)</p>
 </blockquote>
 <ul>
-<li>There is no operative handbook to implement the evaluation process of social programs and projects in Dominica. Processes for evaluationg are unique to specific social programmes  </li>
+<li>The handbook establishes an iterative process of evaluation (i.e., is not a one-time exercise)</li>
 </ul>
 </div>
-<div id="sub-dimension-6-3" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
+<div id="sub-element-6-2" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
 <blockquote>
-<p>NA</p>
+<p>They identify the elements to be included in the evaluation’s ToRs (e.g. objectives of the evaluation, the role and responsibilities of the evaluator and evaluation client and the resources available to conduct the evaluation)</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>The handbook identifies the elements to be included in the evaluation’s ToRs (e.g., objectives of the evaluation, the role and responsibilities of the evaluator and evaluation client, and the resources available to conduct the evaluation)</p></li>
+<li><p>The handbook identifies all the relevant activities to develop each stage of the evaluation process (e.g., evaluators selection, ToR definition for each evaluation, evaluation supervision)</p></li>
 </ul>
 </div>
-<div id="sub-dimension-7-2" class="section level4 unnumbered">
-<h4>Sub-dimension 7</h4>
+<div id="sub-element-7-1" class="section level4 unnumbered">
+<h4>Sub-element 7</h4>
 <blockquote>
-<p>NA</p>
+<p>They outline the operationalization process of the institution’s evaluation agenda (i.e. it is agreed among relevant stakeholders)</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>About the step “strategic evaluation” (described in the Strategic Management Framework): </p>
+<ul>
+<li><p>Management compares the actual results (KPI and initiatives against targets) with the anticipated results. </p></li>
+<li><p>Then, they plan the necessary actions to ensure the strategy’s success or align with the organization’s vision and priorities. </p></li>
+<li><p>Once the required changes are determined, the changes are discussed with the SM – CPSM (Senior Manager – Corporate Planning &amp; Strategic Management (SMCPSM)). </p></li>
+<li><p>Furthermore, changes are reviewed by the Director – Corporate Services (DCS) and submitted to the Executive Management Committee (EMC) for ratification and approval before the change is effected.</p></li>
+</ul></li>
 </ul>
 </div>
-<div id="sub-dimension-8" class="section level4 unnumbered">
-<h4>Sub-dimension 8</h4>
+<div id="sub-element-8" class="section level4 unnumbered">
+<h4>Sub-element 8</h4>
 <blockquote>
-<p>NA</p>
+<p>There have quality control mechanisms for evaluation activities (e.g. quality attribute listings, quality evaluations, peer review, satisfaction surveys, evaluate the evaluator)</p>
 </blockquote>
 <ul>
-<li></li>
+<li>The handbook has quality control mechanisms for evaluation activities (e.g., quality attribute listings, quality evaluations, peer review, satisfaction surveys, evaluate the evaluator)</li>
 </ul>
 </div>
-<div id="sub-dimension-9" class="section level4 unnumbered">
-<h4>Sub-dimension 9</h4>
+<div id="sub-element-9" class="section level4 unnumbered">
+<h4>Sub-element 9</h4>
 <blockquote>
-<p>NA</p>
+<p>There are rules providing all parts in the evaluation process with a way of presenting their opinion (i.e. institutional position)</p>
 </blockquote>
 <ul>
-<li></li>
+<li>There are rules providing all parts in the evaluation process with a way of presenting their opinion (i.e., institutional position)</li>
 </ul>
 </div>
 </div>
-<div id="section-3" class="section level3 unnumbered">
+<div id="section-2" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
 <div id="there-are-guidelines-that-establish-the-rules-and-processes-to-address-and-use-of-me-results" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">1.0.5</span> There are guidelines that establish the rules and processes to address and use of M&amp;E results</h3>
-<div id="sub-dimension-1-4" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<h3>4. There are guidelines that establish the rules and processes to address and use of M&amp;E results</h3>
+<p>There are no specific guidelines to address and use M&amp;E results. However, the Strategic Management Framework mentions that periodic status reports and Management review meetings will be held to discuss the achievement of the strategy through a review of key performance indicators (KPI’s) accomplishments.</p>
+<ul>
+<li>“These meetings help drive organizational focus, detect potential issues that can result in non-achievement of objectives and therefore strategy, ensure individual accountability and drive desired results.”</li>
+</ul>
+<div id="sub-element-1-3" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
 <p>They identify instruments to measure the RBM System results</p>
 </blockquote>
-<ul>
-<li>We are ble to report on the implementation rate f projects. Ministries go through the process of reporting every project that is consideres priority  </li>
-</ul>
 </div>
-<div id="sub-dimension-2-4" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-3" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>NA</p>
+<p>They identify mechanisms to use monitoring results</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>CXC monitors systematically and each division has a role. Each director has the responsibility to ensure its division’s performance. </p></li>
+<li><p>An independent verifier (Atiba) supervises that each division reports monthly what they’ve achieved and what issues they’ve found. </p></li>
+<li><p>The overall team and the Corporate Planning and Strategic Management review the submissions once each department reports correctly. </p></li>
+<li><p>The reviewing process is the accountability use of monitoring</p></li>
 </ul>
 </div>
-<div id="sub-dimension-3-4" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-3" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>They identify mechanisms to use evaluation results</p>
 </blockquote>
 <ul>
-<li>There are drafts or approved guidelines that establish the rules and processes to address and use of M&amp;E results by Dominica’s MDAs. They can’t be found on websites explicitly. M&amp;E frameworks are expected to be embedded in capital project proposal submissions. (Guideline will be shared via email)</li>
+<li><p>An independent verifier (Atiba) supervises that each division reports monthly what they’ve achieved and what issues they’ve found. </p></li>
+<li><p>The overall team and the Corporate Planning and Strategic Management review the submissions once each department reports correctly. </p></li>
 </ul>
 </div>
-<div id="sub-dimension-4-4" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-3" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
 <p>They establish rules and processes that require the budgeting process to consider the results of M&amp;E activities (they make explicit the link between planning and budgeting)</p>
 </blockquote>
 <ul>
-<li><p>These guidelines y identify mechanisms to monitor the address and use of M&amp;E results and establish rules and processes that require the budgeting process to consider the results of M&amp;E activities (they make explicit the link between planning and budgeting).</p></li>
-<li><p>There are guidelins that explain the relationship between planning and budgetting. Uploaded on Teams</p></li>
+<li><p>(C52). The recommendations are biding; everyone follows them because otherwise, it goes up on the board, and it is seen as insubordination and causes trouble. If you don’t follow, you’re reported and will likely lose your job.</p></li>
+<li><p>The institutional budget is allocated using the information generated by M&amp;E activities</p></li>
+<li><p>The budget establishes a specific allocation of resources for M&amp;E activities according to the budget period</p></li>
 </ul>
 </div>
 </div>
-<div id="section-4" class="section level3 unnumbered">
+<div id="section-3" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
 <div id="there-are-actions-towards-building-an-enabling-environment" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">1.0.6</span> There are actions towards building an enabling environment</h3>
-<div id="sub-dimension-1-5" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<h3>5. There are actions towards building an enabling environment</h3>
+<p>The Strategic Management Framework mentions that periodic status reports and Management review meetings will be held to discuss the achievement of the strategy through a review of Key Performance Indicators achievement where CXC monitors systematically and each division has a role.</p>
+<p>Each director has the responsibility to ensure its division’s performance. An independent verifier (Atiba) supervises that each division reports monthly what they’ve achieved and what issues they’ve found. The overall team and the Corporate Planning and Strategic Management review the submissions once each department reports correctly.</p>
+<div id="sub-element-1-4" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
 <p>There are strategies to enhance or attenuate possitive or negative incentives for the use of monitoring</p>
 </blockquote>
 <ul>
-<li><p>The annual budget allocation correlates to project implementation and that works as an incentive to institutionalize RBM/M&amp;E across government in Dominica (eso dice, pero no veo el claro incentivo)</p></li>
-<li><p>The main sources of resistance for adopting and implementing an RBM system in Dominica function and practices are planning and programme execution.</p></li>
+<li><p>The reviewing process is the accountability use of monitoring</p></li>
+<li><p>The pressure to implement an RBM system was not so much from CARICOM; it was more internal because we wanted to achieve our goals. The previous CEO (registrar) wanted to implement a balanced scorecard and define it in RBM. </p></li>
+<li><p>CXC is transitioning to an e.plataform where it would be easier to track all the activities </p></li>
 </ul>
 </div>
-<div id="sub-dimension-2-5" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-4" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
 <p>There are strategies to enhance or attenuate possitive or negative incentives for the use of evaluation</p>
 </blockquote>
 <ul>
-<li><p>The Prime Minister, the Cabinet Office, NGOs, and the Minister for Econ Aairs PlanningREsilience &amp; Sustainable Development have a high level of commitment on implementing an RBM system, The parliment’s and the citizen’s level of commitment is medium; the Permanent Secretaries’ is low</p></li>
-<li><p>There are no incentives for using the results and recommendations from M&amp;E activities</p></li>
+<li><p>The pressure to implement an RBM system was not so much from CARICOM; it was more internal because we wanted to achieve our goals. The previous CEO (registrar) wanted to implement a balanced scorecard and define it in RBM. </p></li>
+<li><p>CXC is transitioning to an e.plataform where it would be easier to track all the activities </p></li>
 </ul>
 </div>
-<div id="sub-dimension-3-5" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-4" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
-<p>NA</p>
+<p>There are mechanisms for the participation of stakeholders in the definition of monitoring activities and needs</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>CXC works with different ministries and local registrars from the various Caribbean countries within the region; they’re part of the decision-making process and planning.</p></li>
+<li><p>CXC is not operating independently; it’s held accountable by different governance bodies.</p></li>
+<li><p>Many stakeholders don’ know there is an existing RBM system. CXC plans to create a platform</p></li>
 </ul>
 </div>
-<div id="sub-dimension-4-5" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-4" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
 <p>There are mechanisms for the participation of stakeholders in the definition of evaluation activities and needs</p>
 </blockquote>
 <ul>
-<li>The Prime Minister, the Cabinet Office, NGOs, and the Minister for Econ Aairs PlanningREsilience &amp; Sustainable Development have a high level of commitment on implementing an RBM system, The parliment’s and the citizen’s level of commitment is medium; the Permanent Secretaries’ is low</li>
+<li>CXC works with different ministries and local registrars from the various Caribbean countries within the region; they’re part of the decision-making process and planning.</li>
 </ul>
 </div>
-<div id="sub-dimension-5-4" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
+<div id="sub-element-5-3" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
 <blockquote>
-<p>NA</p>
+<p>There are periodic meetings involving relevant stakeholders to review the M&amp;E</p>
 </blockquote>
 <ul>
-<li></li>
+<li>CXC works with different ministries and local registrars from the various Caribbean countries within the region; they’re part of the decision-making process and planning.</li>
 </ul>
 </div>
+<div id="sub-element-6-3" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
+<blockquote>
+<p>information as an RBM System feedback exercise</p>
+</blockquote>
 </div>
-<div id="section-5" class="section level3 unnumbered">
+</div>
+<div id="section-4" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
-<div id="there-is-a-results-oriented-national-plan-defined-for-a-given-period-in-the-country" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">1.0.7</span> There is a Results Oriented National Plan defined for a given period in the country</h3>
-<div id="sub-dimension-1-6" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<div id="there-is-an-institutional-results-oriented-plan-defined-for-a-given-period" class="section level3 tabset tabset-pills">
+<h3>6. There is an institutional Results Oriented Plan defined for a given period:</h3>
+<p>CXC has a <strong>Strategic Plan 2021 - 2025</strong>,  is developed by <em>The Corporate Planning and Strategy Management Unit (CPSM)</em> in a participatory process involving different units and committees:</p>
+<ul>
+<li><p>It identifies 13 - strategic objectives categorized in 4 strategic themes: customer &amp; stakeholder excellence, technology &amp; innovation excellence, operational excellence, and governance excellence.</p></li>
+<li><p>Each strategic objective has at least one key performance indicator (KPI) and yearly targets to compare against.</p></li>
+<li><p>Also, each strategic objective has specific initiatives with descriptions, intended results, and those responsible.</p></li>
+</ul>
+<p>Also, the CPSM is responsible for the planning activities in CXC and will supervise other departments to ensure their compliance and the fulfillment of the Strategic Plan. This department is relatively new, being in place since 2020. Three people currently form it, but soon will be four.</p>
+<div id="sub-element-1-5" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
 <p>It has defined objectives</p>
 </blockquote>
 <ul>
-<li>The NRDS has a monitoring tool called Results Monitoring Matrix/Framework (Annex 1 if the NRDS). The ministry of Planning is in charge ot the monitoring of the NRDS</li>
+<li><p>Every department develops a work plan for the year based on the CXC’s Strategic Plan 2021-2025.</p></li>
+<li><p>The departments’ work plans inform the <em>Quick Score Tool or Spider Impact System</em>. It has clear milestones to assist with monitoring. The progress is quarterly, and the departments report initiatives with respective completion percentages. In addition, the tool gives different colors of “progress”: green, yellow, red.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-2-6" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-5" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
 <p>It is constructed in a participatory process</p>
 </blockquote>
 <ul>
-<li>The NRDS was build in a participatory process: MDAs were mandated to contribute to the development of the plan. CREAD was also involved.</li>
+<li>The CXC Strategic Plan, 2020-2025, was constructed in a participatory process using the information generated by M &amp; M&amp;E activities. </li>
 </ul>
 </div>
-<div id="sub-dimension-3-6" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
-<blockquote>
-<p>NA</p>
-</blockquote>
-<ul>
-<li></li>
-</ul>
-</div>
-<div id="sub-dimension-4-6" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
-<blockquote>
-<p>NA</p>
-</blockquote>
-<ul>
-<li></li>
-</ul>
-</div>
-<div id="sub-dimension-5-5" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
-<blockquote>
-<p>It is evaluated by mandate</p>
-</blockquote>
-<ul>
-<li>The executive and legislative are organized (by mandate) to be involved in Dominica’s planning process. The planning role for the legislature is not seen through its oversightfunctions. This exists through the Public Accounts Committee or any other Parliamentary Committee that has been ordered. These Oversight Committees can impact planning though their recommendations. However, apartfrom these, the legislature is not mandated to play a directrole in planning.</li>
-</ul>
-</div>
-<div id="sub-dimension-6-4" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
-<blockquote>
-<p>NA</p>
-</blockquote>
-<ul>
-<li></li>
-</ul>
-</div>
-<div id="sub-dimension-7-3" class="section level4 unnumbered">
-<h4>Sub-dimension 7</h4>
-<blockquote>
-<p>   It has defined responsible actors</p>
-</blockquote>
-<ul>
-<li><p>The monitoring operative handbooks: -identify the relevant activities to develop each stage of the evaluation process (apart from the results monitoring matrix in the NRDS, a document awaits policy approval) -identify the responsible (specific MDAs and units within the MDAs) in every stage of the process - outline specific timeframes to implement every stage of the monitoring process - outline a dissemination strategy of the monitoring results </p></li>
-<li><p>The NRDS has a monitoring tool called Results Monitoring Matrix that defines indicators for the results. Also, The CRRP has a monitoring tool called Results Framework with specific goals, targets, intermediate outcomes, output milestones and initiatives involved. The Ministry of Planning is in charge ot the NRDS’s Results Monitoring Matrix. The MDAs are expected to provide certain information that would assist the Ministry of Planning</p></li>
-<li><p>They know evaluation shall be done at some point but don’t know when or who will be in charge, probably the Ministry of Planning</p></li>
-</ul>
-</div>
-<div id="sub-dimension-8-1" class="section level4 unnumbered">
-<h4>Sub-dimension 8</h4>
-<blockquote>
-<p>   It considers regional (CARICOM) objectives</p>
-</blockquote>
-<ul>
-<li><p>In the NRDS, there is a section which speaks to the need to augment our international and regional relations. </p></li>
-<li><p>There is an ambassador in Dominica dedicates to CARICOM’s affairs</p></li>
-</ul>
-</div>
-</div>
-<div id="section-6" class="section level3 unnumbered">
-<h3></h3>
-</div>
-<div id="there-is-a-national-budgeting-strategy-for-a-given-period-in-the-country" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">1.0.8</span> There is a national budgeting strategy for a given period in the country</h3>
-<div id="sub-dimension-1-7" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
-<blockquote>
-<p> It is allocated according to the objectives/goals/activities of the national planning</p>
-</blockquote>
-<ul>
-<li><p>Lack of strength in monitoring capital projects  </p></li>
-<li><p>The PSIP’s project proposal has a link with the NRDS objectives: what is approved in the PSIP has to be alignes witht he country’s development objectives</p></li>
-</ul>
-</div>
-<div id="sub-dimension-2-7" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
-<blockquote>
-<p> It is allocated using the information generated by evnidence and the RBM System</p>
-</blockquote>
-<ul>
-<li><p>Dominica’s fiscal year starts in July. From October-December before the upcoming fiscal year, the government* does an analysis of performance of fiscal and macroeconomic indicators that is documented in the Medium-Term Macro-Economic and Fiscal Outlook Statement </p></li>
-<li><p>The evidence derived from M&amp;E that decision makers use for the budgetary process is not optimal. They use historical expenditure or performance to engage how realistic it is for some intervention to be implemented. It’s not ideal because the data we are using is not as comprehensive as we would like.</p></li>
-<li><p>The implementation plan than the ministries provide every 3 months has to contain the indicators that will measure their expected outcomes.</p></li>
-</ul>
-</div>
-<div id="sub-dimension-3-7" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
-<blockquote>
-<p>Its allocation is updated according to the evidence derived from the M&amp;E activities</p>
-</blockquote>
-<ul>
-<li><p>In principle, we should be guided by the indicators in determining the diessement of additional funds before giving them, but sometimes the situation require fast track implementation and we can’t wait for the results. (ESTO ES LO QUE CREO QUE EL CUADRO C16 DICE, CHANCE VERIFICAR)</p></li>
-<li><p>Halfway through the budget ptreparation, there is a review where programes are reviewed to determine their needs for the second half of the period (we have no guidelins on this review)</p></li>
-</ul>
-</div>
-<div id="sub-dimension-4-7" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
-<blockquote>
-<p> The budget allocation is defined in annual terms (i.e. it specify the starting date, relevant milestones dates, and the end date)</p>
-</blockquote>
-<ul>
-<li><p>It has to be approved by Cabinet (it is not just financial but also development and planning). Ministry of finance and Planning (Both ministries work together to ensure synergy of the two processes</p></li>
-<li><p>The Pariment in is charge of budgeting and laws. For budgeting, the executive is obliged to go to parliment for approval</p></li>
-<li><p>We have 3 year strategic plans so sometimes they are prepared and sometimes updated and reviewed</p></li>
-<li><p>There is a process with key milestones of the national budgetary process, all within the Financial Adminitration Act.  </p></li>
-<li><p>There is a budget calendar with a list of seauential activities of the budgetary process. It is uploaded on the Q (Lo voy a subir a Teams)  </p></li>
-<li><p>There is a process with key milestones of the national budgetary process, all within the Financial Adminitration Act</p></li>
-<li><p>Dominica’s fiscal year starts in July. From October-December before the upcoming fiscal year, the government* does an analysis of performance of fiscal and macroeconomic indicators that is documented in the Medium-Term Macro-Economic and Fiscal Outlook Statement </p></li>
-</ul>
-</div>
-<div id="sub-dimension-5-6" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
-<blockquote>
-<p>It stabishes a specific allocation of resources for M&amp;E activities according to the budget period</p>
-</blockquote>
-<ul>
-<li>The most dissagregated unit in the budget is project / programme activities (since it’s a 3 year budget, activities need to be disagreggated to see their progress and justify their need for budget through the years)</li>
-</ul>
-</div>
-<div id="sub-dimension-6-5" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
-<blockquote>
-<p> It considers the prioritization of the objectives/goals/activities identified in the national planning</p>
-</blockquote>
-<ul>
-<li><p>Again in the ministry of Finance and Investment website, there is a document with the Budget Estimate. The Budget Estimates includes central government revenue and expenditures which are planned , authorized and controlled through the national budget. It consists of two components: (1)Revenue, which includes domestic revenue, grants and loans and (2) Expenditure which covers recurrent and development expenditures. The recurrent budget finances routine tasks to maintain the status quo, while the development/capital budget finances development activities carried out to contribute toward specific progress or improvement on present status. </p></li>
-<li><p>The NAtional budget is allocated inertially, according to objectives and activities of the national plan, it uses information generated by M&amp;E activities, it is defined in annual terms, considering mid and long term objectives; in terms of how aligned is it with international commitments, provisioning and disbursement is contingent on terms of signed funding agreements particlarly disbursement schedule. It does not establish specific allocation of resources for M&amp;E activities.  </p></li>
-</ul>
-</div>
-<div id="sub-dimension-7-4" class="section level4 unnumbered">
-<h4>Sub-dimension 7</h4>
+<div id="sub-element-3-5" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>It is constructed using the information generated by the RBM System</p>
 </blockquote>
 <ul>
-<li>There are guidelins that explain the relationship between planning and budgetting. Uploaded on Teams</li>
+<li><p> The Strategic Plan still isn’t linked to CARICOM RBM Monitoring, Evaluation, and Reporting ( CARMES database). They had the first meeting with Stacy (Shadow Team) in early 2021.</p></li>
+<li><p>CXC is in the process of establishing a new <em>corporate performance framework</em></p></li>
 </ul>
 </div>
-<div id="sub-dimension-8-2" class="section level4 unnumbered">
-<h4>Sub-dimension 8</h4>
+<div id="sub-element-4-5" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p> It considers other available information to define its allocation (e.g national statistics/poverty measurements/etc.)</p>
+<p>   It has defined strategies to implement the plan</p>
 </blockquote>
 <ul>
-<li>There is a national satistics office under the Ministry of Finance</li>
+<li>There is a 5-year strategic plan, and we evaluate at the end of the watch year to see if we’re achieving our wanted results. Since this unit is new, the evaluation is not as robust as expected, although a suitable evaluation methodology is anticipated.</li>
+</ul>
+</div>
+<div id="sub-element-5-4" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
+<blockquote>
+<p>   It has defined indicators and monitoring tools by mandate</p>
+</blockquote>
+<ul>
+<li>The Strategic Plan has the balanced scorecard method, and the staff knows how to use it. The measure the key performance indicators (KPIs) with this method.</li>
+</ul>
+</div>
+<div id="sub-element-6-4" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
+<blockquote>
+<p>It is evaluated by mandate</p>
+</blockquote>
+<ul>
+<li>The Strategic Plan is new and long-term, so CXC must evaluate constantly. The brief report is available and has a color guide to see their advance. The institutional mechanism is defined within the Strategic Plan. </li>
+</ul>
+</div>
+<div id="sub-element-7-2" class="section level4 unnumbered">
+<h4>Sub-element 7</h4>
+<blockquote>
+<p>It has specific evaluation activities</p>
+</blockquote>
+<ul>
+<li><p>Initiatives have activities and information on how to get there and define who is responsible for each activity. For each of the 30 set objectives, we have different activities, people responsible, timelines, and ways to verify if it has been fulfilled.</p></li>
+<li><p>There is a program for monitoring the strategic objectives to know how close the specific targets are. They have alerts. The monitoring is reported to the directors and governance bodies to understand CXC’s going on. </p></li>
+</ul>
+</div>
+<div id="sub-element-8-1" class="section level4 unnumbered">
+<h4>Sub-element 8</h4>
+<blockquote>
+<p>   It has defined responsible actors</p>
+</blockquote>
+<ul>
+<li><p>The different units/committees/stakeholders involved in the CXC Strategic Plan 2020-2025 and their roles are the following: </p>
+<ul>
+<li><p>Local Registrars –&gt; Representatives of the Ministries in the Participating Territories</p></li>
+<li><p>Staff Associations –&gt; Representatives of the Staff at both Offices (The Plan utilizes the People-Centered approach. Therefore, this collaboration aided in ensuring that the concerns were incorporated)</p></li>
+<li><p>Strategic Management Team –&gt; Internal Cross-Functional Team</p></li>
+<li><p>Administrative and Finance Committee –&gt; Sub-Committee of the Final Authorizing Committee </p></li>
+<li><p>Council –&gt; Ultimate Governance Authority development/approval </p></li>
+</ul></li>
+</ul>
+</div>
+<div id="sub-element-9-1" class="section level4 unnumbered">
+<h4>Sub-element 9</h4>
+<blockquote>
+<p>   It considers regional (CARICOM) objectives</p>
+</blockquote>
+<ul>
+<li><p> CXC has responsibility for the educational development of the Caribbean Human Resource. The planning is based on what CARICOM intends to achieve in education for its member states. </p></li>
+<li><p>Given the nature of the institution, it is essential to coordinate with CARICOM. Then again, CXC’s planning aligns with whatever CARICOM wants to achieve in developing human resources. </p></li>
 </ul>
 </div>
 </div>
-<div id="section-7" class="section level3 unnumbered">
+<div id="section-5" class="section level3 unlisted toc-ignore">
 <h3></h3>
+</div>
+<div id="there-is-an-institutional-budgeting-strategy-for-a-given-period" class="section level3 tabset tabset-pills">
+<h3>7. There is an institutional budgeting strategy for a given period :</h3>
+<p>CXC has a three-year institutional budgeting strategy plus a two-year forecast:</p>
+<ul>
+<li><p>The three-year budget is revised by the admin and finance committee; the budget can only be implemented if previously approved.</p></li>
+<li><p>The two-year forecast is adjusted depending on the strategic plan results of the first three-year institutional strategy.</p></li>
+</ul>
+<p>CXC budget’s fiscal year is January - December. The budgeting process, coordinated by the financial committee, starts in June and is fully recommended for approval in October and approved in December.</p>
+<p>In general, the <em>Finance and Office Management Department</em> (FOMD) is responsible for budgeting activities in CXC. The FOMD develops annual budgets but also quarterly variant reports. FOMD also started sending monthly reports to the different departments to monitor what they have spent against what was budgeted and approved.</p>
+<div id="sub-element-1-6" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
+<blockquote>
+<p> It is allocated according to the objectives/goals/activities of the institutional planning and their prioritization</p>
+</blockquote>
+<ul>
+<li><p>There is a link between planning and budgeting: the department develops the budget to accomplish the initiatives in the Strategic Plan.</p>
+<ul>
+<li><p>When the budget is approved, each section will get feedback from the FOMD. </p></li>
+<li><p>They show each section their annual budget broken down by category. </p></li>
+<li><p>As they carry out activities and spend money, they observe the available balance; the sections can also calculate the returns for investments. </p></li>
+</ul></li>
+</ul>
+</div>
+<div id="sub-element-2-6" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
+<blockquote>
+<p> It is allocated using the information generated by evidence and the RBM System</p>
+</blockquote>
+<ul>
+<li>CXC has a 3-year budget. CXC has a 5-year strategic plan and a 3-year budget plan that considers the main elements of the Strategic Plan. If there are changes to the Plan, they adapt what is needed.</li>
+</ul>
+</div>
+<div id="sub-element-3-6" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
+<blockquote>
+<p>Its allocation is updated according to the evidence derived from the M&amp;E activities</p>
+</blockquote>
+<ul>
+<li><p>CXC has a 3-year budget. CXC has a 5-year strategic plan and a 3-year budget plan that considers the main elements of the Strategic Plan. If there are changes to the Plan, they adapt what is needed.</p></li>
+<li><p><strong>Budgeting process</strong>:</p>
+<ul>
+<li><p>At the start of the budgeting process, the financial controller will notify the heads of units that the process is about to start. </p></li>
+<li><p>The budget will be linked in an operational perspective of what CXC is looking to do and from a strategic perspective. </p></li>
+</ul></li>
+</ul>
+</div>
+<div id="sub-element-4-6" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
+<blockquote>
+<p> The budget allocation is defined in annual terms (i.e. it specify the starting date, relevant milestones dates, and the end date)</p>
+</blockquote>
+<ul>
+<li><p>The budgeting process starts in June and gets thoroughly recommended for approval in October and December. The financial committee coordinates this process.</p></li>
+<li><p>There are two budget approvals: the administrative and financial committee makes the first round of approval in October and goes to Council in December. </p></li>
+<li><p>CXC’s budget fiscal year is January – December.</p></li>
+</ul>
+</div>
+<div id="sub-element-5-5" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
+<blockquote>
+<p>It establishes a specific allocation of resources for M&amp;E activities according to the budget period</p>
+</blockquote>
+<ul>
+<li>The basic unit in the budget is initiative/project.</li>
+</ul>
+</div>
+<div id="sub-element-6-5" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
+<blockquote>
+<p> It considers other available information to define its allocation (e.g monitoring data/ regional poverty measurements/etc.)</p>
+</blockquote>
+</div>
+<div id="sub-element-7-3" class="section level4 unnumbered">
+<h4>Sub-element 7</h4>
+<blockquote>
+<p> It considers regional planning, objectives/goals/activities</p>
+</blockquote>
+<ul>
+<li>The budget is aligned to the National Plan. All the strategic objectives are based on the long term plan</li>
+</ul>
+</div>
+</div>
+<div id="section-6" class="section level3 unlisted toc-ignore">
+<h3></h3>
+</div>
+<div id="there-is-a-specific-unit-department-within-the-regional-institution-responsible-for-the-planning-functions" class="section level3 tabset tabset-pills">
+<h3>8. There is a specific unit / department within the Regional Institution responsible for the planning functions:</h3>
+<p>The Corporate Planning and Strategy Management Unit (CPSM) is in charge of coordinating the planning activities in CXC.The key units/committees/stakeholders involved with CPSM regarding CXC’s planning activities are the following:</p>
+<ul>
+<li><p>Executive –&gt; Guiding the Strategic Direction</p></li>
+<li><p>Senior Managers –&gt; Involved in aiding the implementation of the Strategic Directives within the units</p></li>
+</ul>
+<div id="sub-element-1-7" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
+<blockquote>
+<p>The unit / department has the necessary financial and infraestructural resources to undertake its functions and activities</p>
+</blockquote>
+<ul>
+<li>The Corporate Planning and Strategic Management Department (CPSM) has 3 people on as staff working full time, and the unit has the necessary financial and infrastructural resources to undertake its functions and activities</li>
+</ul>
+</div>
+<div id="sub-element-2-7" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
+<blockquote>
+<p>The unit / department has the necessary human resources to undertake its functions and activities</p>
+</blockquote>
+<ul>
+<li><p>The CPSM will supervise other departments to ensure their compliance and the fulfillment of the Strategic Plan. This department is relatively new, being in place since 2020. Three people currently form it, but soon will be four.</p></li>
+<li><p>The planning process considers constant M&amp;E. They have workshops that are aligned with balanced scorecard methodology</p></li>
+<li><p>While making the plan, the institutions keeps track of whom is responsible for which activity (there are enough human resources for this)</p></li>
+</ul>
+</div>
+<div id="sub-element-3-7" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
+<blockquote>
+<p>The unit / department is known by all the other institution’s departments and holds regular communication with relevant decision-making actors within the institution</p>
+</blockquote>
+<ul>
+<li><p>Every department does some planning, but CPSM is responsible for planning and putting it all together. </p></li>
+<li><p>The Corporate Planning and Strategic Management Department (CPSM) ensures collaboration in planning among different departments and divisions.</p></li>
+<li><p>The CPSM has a structured system whereby each person can participate in the planning process. </p></li>
+<li><p>The planning is based on what CARICOM intends to achieve in education for its member states. Given the nature of the institution, it is essential to coordinate with CARICOM.</p></li>
+<li><p>Every department should develop an annual work plan based on the CXC’s Strategic Plan 2021-2025. So CXC has a structured approach, and each department and division is aware of the goals.</p></li>
+</ul>
+</div>
+</div>
+<div id="section-7" class="section level3 unlisted toc-ignore">
+<h3></h3>
+</div>
+<div id="there-is-a-specific-unit-department-within-the-regional-institution-responsible-for-the-budgeting-functions" class="section level3 tabset tabset-pills">
+<h3>9. There is a specific unit / department within the Regional Institution responsible for the budgeting functions</h3>
+<p>The <em>Finance and Office Management Department (FOMD)</em> is responsible for budgeting activities in CXC; it operates with a financial controller who leads a financial office management team. The budget is annually planned; the Strategy Officer &amp; Human Resource Manager receives quarterly reports from the departments to compare the spending and budget. </p>
+<p>The budgeting process starts around June, and it gets fully approved by the finance committee in December. The process involves discussing if the resources are enough to carry out the activities. If the resources are insufficient, the departments need to justify why they need more.</p>
+<p>The FOMD develops annual budgets and quarterly variant reports. Each section receives feedback from the finance department to know how much they can still spend; they send them their annual budget broken down to understand how they’re doing. Furthermore, the FOMD started sending monthly reports to the different departments to monitor their spending.</p>
+<p>The budget has the following characteristics:</p>
+<ul>
+<li><p>The budget is according to the objectives/goals/activities of CXC’s Strategic Planning and their prioritization</p></li>
+<li><p>The budget is allocated using the information generated by M&amp;E activities</p></li>
+<li><p>The budget isspecifies the starting date, relevant milestones dates, and the end date</p></li>
+<li><p>The budget establishes a specific allocation of resources for M&amp;E activities according to the budget period</p></li>
+<li><p>The budget is clearly defined; it’s clear what the tasks are and who is responsible.</p></li>
+<li><p>As the department transitions to an e-platform, they will update some functions.</p></li>
+</ul>
+<div id="sub-element-1-8" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
+<blockquote>
+<p>The unit / department has the necessary financial and infraestructural resources to undertake its functions and activities</p>
+</blockquote>
+<ul>
+<li>The Finance and Office Management Department has the necessary financial, infrastructural, and human resources to undertake its functions and activities. The unit is known by all the other institution’s departments and holds regular communication with relevant decision-making actors within CXC</li>
+</ul>
+</div>
+<div id="sub-element-2-8" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
+<blockquote>
+<p>The unit / department has the necessary human resources to undertake its functions and activities</p>
+</blockquote>
+<ul>
+<li><p>The role of all the different units/committees/stakeholders involved in the development/approval of CXC’s three-year budget are the following: </p></li>
+<li><p>The Finance and Office Management department has 20 dedicated staff units, and the personnel assigned to this department are working full time </p>
+<ul>
+<li><p>All CXC units/departments –&gt; Annual Budget Unit proposal</p></li>
+<li><p>Senior Management –&gt; Initial preparation and review </p></li>
+<li><p>Executive –&gt; approval </p></li>
+<li><p>Administrative and Finance Committee –&gt; Governance Committee approval </p></li>
+<li><p>Council –&gt; Final Governance approval</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="sub-element-3-8" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
+<blockquote>
+<p>The unit / department is known by all the other institution’s departments and holds regular communication with relevant decision-making actors within the institution</p>
+</blockquote>
+<ul>
+<li><p>The head of the department works with their unit to derive the budget. All the units within a department are in constant communication about their budget needs: they start asking from the base because the persons who are closer to the ground will tell us what results they are trying to achieve and what means they will need to achieve them.</p></li>
+<li><p>The Finance and Office Management Department is in charge of implementing and coordinating the budgeting activities within CXC. the key units/committees/stakeholders involved with FOMD are the following: </p>
+<ul>
+<li><p>All CXC units/departments –&gt; Annual Budget Unit proposal</p></li>
+<li><p>Senior Management –&gt; Initial preparation and review</p></li>
+<li><p>Executive –&gt; Approval</p></li>
+<li><p>Administrative and Finance Committee –&gt; Governance Committee approval</p></li>
+<li><p>Council –&gt; Final Governance approval</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="section-8" class="section level3 unlisted toc-ignore">
+<h3></h3>
+</div>
+<div id="there-is-a-specific-unit-department-within-the-regional-institution-responsible-for-the-me-functions" class="section level3 tabset tabset-pills">
+<h3>10. There is a specific unit / department within the Regional Institution responsible for the M&amp;E functions</h3>
+<p>The <em>Corporate Planning and Strategy Management Unit (CPSM)</em> is responsible for coordinating the M&amp;E activities; it is in charge of developing <em>CXCs 2021-2025 Strategic Plan and Monitoring</em> its implementation and achieving the defined objectives. </p>
+<p>The CPSM ensures CXC meets its objectives and keeps a results-oriented approach. In addition, the CPSM will supervise other departments to ensure their compliance and the fulfillment of the Strategic Plan.</p>
+<p>M&amp;E is done at the department and division level; the departments’ work plans inform the Quick Score Tool or Spider Impact System. It has clear milestones to assist with monitoring. The progress is quarterly, and the departments report initiatives with respective completion percentages. In addition, the tool gives different colors of “progress”: green, yellow, red.</p>
+<p>The CPSM unit oversees evaluation overall at different divisions and in terms of the overall portfolio. The Unit that will be in charge of evaluating was created this year. Since the unit is new, the evaluation might not be to its full potential but intended to be. It’s not possible to assess the unit’s performance since it’s the first year.</p>
+<p>Also, the SMF mentions a three-step evaluation process that isn’t clear enough.</p>
+<div id="sub-element-1-9" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
+<blockquote>
+<p>The unit / department has the necessary financial and infraestructural resources to undertake its functions and activities</p>
+</blockquote>
+<ul>
+<li> This department is relatively new, being in place since 2020. Three people currently form it, but soon will be four.</li>
+</ul>
+</div>
+<div id="sub-element-2-9" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
+<blockquote>
+<p>The unit / department has the necessary human resources to undertake its functions and activities</p>
+</blockquote>
+<ul>
+<li>The heads of departments play significant roles in developing M&amp;E activities. They update the strategies of each department. In addition, CPSM will coordinate M&amp;E with other units. </li>
+</ul>
+</div>
+<div id="sub-element-3-9" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
+<blockquote>
+<p>The unit / department is known by all the other institution’s departments and holds regular communication with relevant decision-making actors within the institution</p>
+</blockquote>
+<ul>
+<li><p>The CPSM supervises the compliance of other departments for the Strategic Plan to be achieved. Therefore, it impacts daily organizational activities across different departments. </p></li>
+<li><p>The CPSM sends reports to different divisions to assist them in decision making.</p></li>
+<li><p>There are regular gatherings with the team to assess performance: every six months they meet to see how everyone is doing.</p></li>
+</ul>
+</div>
+</div>
+<div id="section-9" class="section level3 unlisted toc-ignore">
+<h3></h3>
+<hr />
 </div>
 </div>
 <div id="implementation" class="section level1">
-<h1><span class="header-section-number">2</span> Implementation</h1>
+<h1>Implementation</h1>
 <div id="there-are-operative-handbooks-to-implement-the-monitoring-functions-i.e.logic-framework" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">2.0.1</span> There are operative handbooks to implement the monitoring functions (i.e. Logic Framework)</h3>
-<div id="sub-dimension-1-8" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<h3>11. There are operative handbooks to implement the monitoring functions (i.e. Logic Framework):</h3>
+<p>There is no operational handbook to implement the Strategic Management Framework. It was mentioned in the online questionnaires that CXC has a handbook to implement the monitoring functions, but the link shared doesn’t work. The document was requested.</p>
+<div id="sub-element-1-10" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
 <p>They identify all the relevant activities to develop each stage of the process (e.g.specific activities within the analysis of the project’s context, stakeholder)</p>
 </blockquote>
-<ul>
-<li><p>The NRDS has a monitoring tool called Results Monitoring Matrix/Framework (Annex 1 if the NRDS). The ministry of Planning is in charge ot the monitoring of the NRDS</p></li>
-<li><p>The NRDS has a monitoring tool called Results Monitoring Matrix that defines indicators for the results. Also, The CRRP has a monitoring tool called Results Framework with specific goals, targets, intermediate outcomes, output milestones and initiatives involved. The Ministry of Planning is in charge ot the NRDS’s Results Monitoring Matrix. The MDAs are expected to provide certain information that would assist the Ministry of Planning</p></li>
-</ul>
 </div>
-<div id="sub-dimension-2-8" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-10" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
 <p>They outline specific timeframes to implement every stage of the process</p>
 </blockquote>
-<ul>
-<li><p>The NRDS has a monitoring tool called Results Monitoring Matrix that defines indicators for the results. Also, The CRRP has a monitoring tool called Results Framework with specific goals, targets, intermediate outcomes, output milestones and initiatives involved. The Ministry of Planning is in charge ot the NRDS’s Results Monitoring Matrix. The MDAs are expected to provide certain information that would assist the Ministry of Planning</p></li>
-<li><p>There is a “system” in place for monitoring and reporting. All ministries submit project proposals, bottlenecks are identified, visits to the projects are held (Planning has systems in place to collect data). Also, all ministries provide monthly reports of their programmes’ implementation and budget expenditure to the Ministry of Planning using a standardized template. No matter where the projects resides, it is the same template that is reported to the Ministery of Planning. </p></li>
-</ul>
 </div>
-<div id="sub-dimension-3-8" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-10" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
-<p>They identify the responsibles in every stage of the process (specific MDAs and units within the MDAs)</p>
+<p>They identify the responsibles in every stage of the process</p>
 </blockquote>
-<ul>
-<li>The NRDS has a monitoring tool called Results Monitoring Matrix that defines indicators for the results. Also, The CRRP has a monitoring tool called Results Framework with specific goals, targets, intermediate outcomes, output milestones and initiatives involved. The Ministry of Planning is in charge ot the NRDS’s Results Monitoring Matrix. The MDAs are expected to provide certain information that would assist the Ministry of Planning</li>
-</ul>
 </div>
-<div id="sub-dimension-4-8" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-7" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>NA</p>
+<p>They outline a dissemination strategy of the LF results (what, how, when and to who do you want to diffuse the results)</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
+</div>
+<div id="sub-element-5-6" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
+<blockquote>
+<p>(If more than one) They are consistent with each other</p>
+</blockquote>
 </div>
 </div>
-<div id="section-8" class="section level3 unnumbered">
+<div id="section-10" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
 <div id="there-are-operative-handbooks-that-establish-specific-steps-to-develop-each-stage-of-the-evaluation-function" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">2.0.2</span> There are operative handbooks that establish specific steps to develop each stage of the evaluation function</h3>
-<div id="sub-dimension-1-9" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<h3>12. There are operative handbooks that establish specific steps to develop each stage of the evaluation function:</h3>
+<p>There is no operational handbook to implement the Strategic Management Framework. It was mentioned in the online questionnaires that CXC has a handbook for implementing the evaluation functions, but the link shared doesn’t work. The document was requested.</p>
+<div id="sub-element-1-11" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
-<p>NA</p>
+<p>They identify all the relevant activities to develop each stage of the evaluation process (e.g. evaluators selection, ToR definition for each evaluation, evaluation supervision)</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
 </div>
-<div id="sub-dimension-2-9" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-11" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>NA</p>
+<p>They outline specific timeframes to implement every stage of the process</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
 </div>
-<div id="sub-dimension-3-9" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-11" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
-<p>NA</p>
+<p>They outline a dissemination strategy of the evaluation results (what, how, when and to who do you want to diffuse the results)</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
 </div>
-<div id="sub-dimension-4-9" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-8" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>NA</p>
+<p>They identify the responsibles in every stage of the process</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
+</div>
+<div id="sub-element-5-7" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
+<blockquote>
+<p>(If more than one) They are consistent with each other</p>
+</blockquote>
 </div>
 </div>
-<div id="section-9" class="section level3 unnumbered">
+<div id="section-11" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
-<div id="there-is-an-operating-and-functioning-me-system-at-the-national-orand-subnational-levels" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">2.0.3</span> 11. There is an operating and functioning M&amp;E system at the national or/and subnational levels</h3>
-<div id="sub-dimension-1-10" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<div id="the-ri-collects-information-to-monitor-its-performance" class="section level3 tabset tabset-pills">
+<h3>13. The RI collects information to monitor its performance:</h3>
+<p>The <em>Corporate Planning and Strategy Management Unit (CPSM)</em> collects information to monitor CXCs performance using the Quick Score Tool (QST)or Spider Impact System; which uses the balance scorecard methodology for strategy management. </p>
+<p>CPSM has clear key performance indicators (KPIs) and the initiatives surrounding those objectives. The KPIs’ data is captured on the initiative’s performance, budget spending, issues, and CXC’s target. After the information is captured, the units/departments analyze it.</p>
+<p>Depending on a monthly or quarterly basis, Individuals will then go to their division, department, or corporate level if the results are coming out of the KPI. In addition, some review processes look at the results, ensuring that the activities identified as part of the initiative are executed on time and obtain the expected results.</p>
+<div id="sub-element-1-12" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
-<p>It is homogeneous across the government and holds a common language in concepts of M&amp;E</p>
+<p> It is timely: it is available when making policy decisions</p>
 </blockquote>
 <ul>
-<li>There is not a comprehensive plan in terms of M&amp;E in Dominica</li>
+<li> Monthly reports are prepared and sent to different divisions based on the results of the QST. In addition, monthly and quarterly reports are also sent to the registrar, the government body, and the executive management team to assist decision-making.</li>
 </ul>
 </div>
-<div id="sub-dimension-2-10" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-12" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>It is integrated at various levels of government (national and subnational)</p>
+<p>It is trustworthy: there is a validation mechanism.</p>
 </blockquote>
 <ul>
-<li>None of the MDAs have M&amp;E institutional arrangements such as specific units for M&amp;E activities, operative handbooks for M&amp;E activities</li>
+<li><p>CPSM uses the balanced scorecard methodology for strategic management. CXC has objectives and goals at the corporate level, but they also cascade them down to the divisions and departments. Clear Key performance indicators (KPIs) and initiatives are surrounding those objectives. </p></li>
+<li><p>KPIs were selected based on their perceived ability to measure achievement of the Strategic Objective’s intended results accurately.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-3-10" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-12" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
-<p>  It is known by all sectors and MDAs* in government</p>
+<p> It is systematized: it is organized for easy understanding.</p>
 </blockquote>
 <ul>
-<li><p>There is no operating and functioning M&amp;E system, the MDAs who would be more likely to engage are Health, Education and Agriculture. They have data. It could be a vehicle for advancing the concept</p></li>
-<li><p>There is no specific unit wothin the MDAs responsible for M&amp;E. It’s all done in collaboration and consultation with the ministries</p></li>
+<li>The KPIs are timely, trustworthy, systematized, and replicable. Also, they are available to monitor periodically and have a defined update period. </li>
 </ul>
 </div>
-<div id="sub-dimension-4-10" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-9" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>NA</p>
+<p> It is relevant regarding its management: it allows to measure the indicators of planning and budgeting for results.</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>The heads of CXC’s departments can see their department’s indicators in the QST. CPSM can view the entire organization. Some staff within each department have different privileges. Some may be able to make changes while others can only see.</p></li>
+<li><p>Depending on a monthly or quarterly basis, Individuals will then go to their division, department, or corporate level if the results are coming out of the KPI. Some review processes look at those results’ performance, ensuring that the activities identified as part of the initiative are being executed on time and obtaining the expected results. </p></li>
 </ul>
 </div>
-<div id="sub-dimension-5-7" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
+<div id="sub-element-5-8" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
 <blockquote>
-<p>NA</p>
+<p> It has a defined update period</p>
 </blockquote>
 <ul>
-<li></li>
+<li>The key performance indicators (KP) data measuring and collecting period/time data varies. Some are measured monthly, quarterly, semi-annually, and annually- Reports and surveys are the information sources for the KPIs</li>
 </ul>
 </div>
-<div id="sub-dimension-6-6" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
+<div id="sub-element-6-6" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
 <blockquote>
-<p>NA</p>
+<p> It is monitored periodically within the time horizon of planning and budgeting for results.</p>
 </blockquote>
 <ul>
-<li></li>
+<li>CPSM also tracks financial aspects with the QST. For example, in budgeting, monitors expenditure. That is also captured if a department is on time with its projects. It also gives projections of cost. </li>
 </ul>
 </div>
-<div id="sub-dimension-7-5" class="section level4 unnumbered">
-<h4>Sub-dimension 7</h4>
+<div id="sub-element-7-4" class="section level4 unnumbered">
+<h4>Sub-element 7</h4>
 <blockquote>
-<p>NA</p>
+<p> It is replicable: anyone with access to the information may obtain the same results.</p>
 </blockquote>
 <ul>
-<li></li>
+<li>The KPIs are timely, trustworthy, systematized, and replicable. Also, they are available to monitor periodically and have a defined update period. </li>
+</ul>
+</div>
+<div id="sub-element-8-2" class="section level4 unnumbered">
+<h4>Sub-element 8</h4>
+<blockquote>
+<p>It is collected considering vulnerable populations (e.g., they measure the access of women/indigenous/disabled people to the institution’s interventions, they measure improvements in the goal to achie gender equality). Please provide examples of gender approach strategies considered by your institution.</p>
+</blockquote>
+<ul>
+<li>No information if collected considering vulnerable populations</li>
+</ul>
+</div>
+<div id="sub-element-9-2" class="section level4 unnumbered">
+<h4>Sub-element 9</h4>
+<blockquote>
+<p> It is public/accessible to citizens.</p>
+</blockquote>
+<ul>
+<li>It’s not public for citizens</li>
+</ul>
+</div>
+<div id="sub-element-10" class="section level4 unnumbered">
+<h4>Sub-element 10</h4>
+<blockquote>
+<p> It is analyzed in periodic reports</p>
+</blockquote>
+<ul>
+<li>CXC is certified in developing logic frameworks, but they stick primarily to the balanced scorecard. The justification is that their projects are not necessarily more than 5 years, they are 1-2 years, and the balanced scorecard structure fits better in terms of the structure.</li>
+</ul>
+</div>
+<div id="sub-element-11" class="section level4 unnumbered">
+<h4>Sub-element 11</h4>
+<blockquote>
+<p> It is documented in a user-friendly way (simple, concise, and easy-to-use decision-making reports).</p>
+</blockquote>
+<ul>
+<li><p>KPI’s are analyzed in periodic reports and documented in a user-friendly way. </p></li>
+<li><p>They are developing an M&amp;E budgeting tool so that you don’t have to wait until the end of the month to see how you’re doing budget-wise. They strive for a device that is a lot more interactive and easier to understand and where users can get the information they need when they need it.</p></li>
+</ul>
+</div>
+<div id="sub-element-12" class="section level4 unnumbered">
+<h4>Sub-element 12</h4>
+<blockquote>
+<p> It consders the Performance Measurement Framework (CARICOM´s monitoring tool for the Strategic Plan)</p>
+</blockquote>
+<ul>
+<li>They prefer to use the Balance Scorecard Methodology instead of the framework CARICOM suggests. </li>
+</ul>
+</div>
+<div id="sub-element-13" class="section level4 unnumbered">
+<h4>Sub-element 13</h4>
+<blockquote>
+<p>The regional institution reports its monitoring results in the CARMES web portal</p>
+</blockquote>
+<ul>
+<li><p>The system is not connected to CARICOM, CARMES, or any other RI. </p></li>
+<li><p>The information generated by the Quick Score is reported to the CXC units and departments and the CXC Chairman, but no to CARICOM. or to CARMES. There is no commitment with any external actor or Member State Governments </p></li>
 </ul>
 </div>
 </div>
-<div id="section-10" class="section level3 unnumbered">
+<div id="section-12" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
-<div id="there-is-a-defined-human-resources-structure-for-me-activities" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">2.0.4</span> There is a defined human resources structure for M&amp;E activities</h3>
-<div id="sub-dimension-1-11" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<div id="the-regional-institution-has-an-evaluation-plan-for-its-activities-interventions-or-programs" class="section level3 tabset tabset-pills">
+<h3>14. The regional institution has an evaluation plan for its activities, interventions or programs:</h3>
+<p>It is mentioned that they plan to perform their first evaluation at the end of the year on CXC’s performance and the achievement of results. Also, it appears that evaluation is interpreted as internal evaluation &amp; internal monitoring</p>
+<div id="sub-element-1-13" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
-<p>It has specific focal points in each MDA across the government</p>
+<p>It has a specific evaluation strategy for a given period.</p>
+</blockquote>
+</div>
+<div id="sub-element-2-13" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
+<blockquote>
+<p>It has evaluation activities delegated to specific actors (e.g. institution’s M&amp;E unit, external agencies)</p>
+</blockquote>
+</div>
+<div id="sub-element-3-13" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
+<blockquote>
+<p>It is the result of institutionalized planning exercises; that is, it follows an established procedure.</p>
 </blockquote>
 <ul>
-<li><p>Details on the the general responsibilities of ministers and permanent secretaries:- Ministers –&gt; political leaders who exercise general direction and control of the Ministry - Permanent Secretaries –&gt; adminsitrative head of Misnityries and chief authorising oicers. They ensure that the policies of the Minister are implemented, reports are submitted, etc. They sign all contracts and authorize payments upon consultation with the Minister. </p></li>
-<li><p>There is no specific unit wothin the MDAs responsible for M&amp;E. It’s all done in collaboration and consultation with the ministries</p></li>
+<li>The evaluation comes when CPSM wants to know if we’re they’re getting to the target. </li>
 </ul>
 </div>
-<div id="sub-dimension-2-11" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-4-10" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>The MDA focal points constitute a coordinated network that is part of the M&amp;E System</p>
+<p>It is known by those responsible for the areas/units of the institution.</p>
 </blockquote>
-<ul>
-<li>Mrs. Joseph and Dr. Paul are asking every ministry to submit a champion and drive the RBM system within each ministeries in order to work on a synchronized and harmonized track Mrs. Joseph identifies the City &amp; village councils, the local government figures of Dominica, as a key stakeholder in the implementation of social programmes. They administer some part of government social protection programmes. For certain programs, the government will tranfer the funds to these organizations </li>
-</ul>
 </div>
-<div id="sub-dimension-3-11" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-5-9" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
 <blockquote>
-<p>The MDA focal points have clear functions, responsibilities and expected outcomes</p>
+<p>It has established the activities, interventions or programs to evaluate.</p>
 </blockquote>
-<ul>
-<li>A public servant can be permanent secretary in one ministry and senior economist in another one. The oicer is typically appointed to one post butreceives an allowance for carrying on the duties of another. Permanent Secretaries, in particular, oen hold dual roles…as Permanent Secretary in two dierent Ministries.</li>
-</ul>
 </div>
-<div id="sub-dimension-4-11" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-6-7" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
 <blockquote>
-<p>NA</p>
+<p>It is designed considering vulnerable populations approach (e.g., the evaluations involve gender analytical tools and methodologies, etc.).</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
+</div>
+<div id="sub-element-7-5" class="section level4 unnumbered">
+<h4>Sub-element 7</h4>
+<blockquote>
+<p>The document is public/accessible to citizens.</p>
+</blockquote>
 </div>
 </div>
-<div id="section-11" class="section level3 unnumbered">
+<div id="section-13" class="section level3 unlisted toc-ignore">
 <h3></h3>
+<hr />
 </div>
 </div>
 <div id="technical" class="section level1">
-<h1><span class="header-section-number">3</span> Technical</h1>
-<div id="there-are-sufficient-private-and-public-entities-providing-me-services-including-training-to-the-public-sector." class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">3.0.1</span> There are sufficient private and public entities providing M&amp;E services, including training, to the public sector.</h3>
-<div id="sub-dimension-1-12" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
-<blockquote>
-<p>They provide a variety of M&amp;E services (e.g conduct diagnostics, evaluations, assessments)</p>
-</blockquote>
+<h1>Technical</h1>
+<div id="there-are-skilled-personnel-in-the-ri-with-technical-capacity-and-competencies-to-conduct-planning-and-budgeting-for-results" class="section level3 tabset tabset-pills">
+<h3>15. There are skilled personnel in the RI with technical capacity and competencies to conduct planning and budgeting for results:</h3>
+<p>During last year’s development of the Strategic Plan, the staff was exposed to different planning and designing projects and initiatives to achieve the strategic objectives.</p>
 <ul>
-<li>There are some Civic Social Organization that sometimes provide evaluation reports. They are not optimal because they are not constant.</li>
+<li><p>Al least 70% of the staff were involved at some point in the workshops. </p></li>
+<li><p>We have certified individuals in the balanced scorecard institute, and others will be certified in balanced scorecard training</p></li>
 </ul>
-</div>
-<div id="sub-dimension-2-12" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
-<blockquote>
-<p>They provide a broad academic offer for RBM capacity building (e.g continous courses / diplomas in M&amp;E topics, specific training to the public sector )</p>
-</blockquote>
-<ul>
-<li><p>Dr. Paul mentions there are no private entities providing M&amp;E training to the public sector</p></li>
-<li><p>The World Bank and CDB have previously provided M&amp;E training. Recently, the Ministry of Agriculture had some M&amp;E training due to a World Bank agricultural project</p></li>
-<li><p>CARICOM has a leadership program (CRLG) every few years</p></li>
-<li><p>The World Bank who is doing a few projects in Dominica has online M&amp;E courses that they do online in order to build capacity</p></li>
-<li><p>Mr. Laville mentions there are no private entities providing M&amp;E training to the public sector</p></li>
-<li><p>CREAD started to develop a programme of capacity building with three levels. The first level is focused on awareness, trying to make participants aware of what it involves and trying to make them experts. The second level is focused on developing skills through online courses and training so that they have the skills necessary to actually go and execute some specific functions. The third level that is professional where that person is well trained to a higher level and they can oversee everything and properly distirbutue duties and responsabilities in order to make sure that the total requirement is fine.</p></li>
-<li><p>CARICOM put on a workshop with the Commonwealth in 2019 and they brought the ministeries together tp show them how to set their goals, visions and objectives, but it didn’t get to the M&amp;E aspect.</p></li>
-</ul>
-</div>
-</div>
-<div id="section-12" class="section level3 unnumbered">
-<h3></h3>
-</div>
-<div id="there-are-skilled-personnel-in-government-with-technical-capacity-and-competencies-to-conduct-planning-and-budgeting-for-results" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">3.0.2</span> There are skilled personnel in government with technical capacity and competencies to conduct planning and budgeting for results</h3>
-<div id="sub-dimension-1-13" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<div id="sub-element-1-14" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
 <p>They have technical skills to use derived evidence from M&amp;E (identify priorities, vulnerable population, what works to attend that priorities)</p>
 </blockquote>
 <ul>
-<li>There are skilled personnel in some/all of Dominica’s MDAs with technical capacity and competencies to conduct budgeting for results.</li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li><p>Results chain (logic model)/ levels of results </p></li>
+<li><p>RBM tool – Performance measurement framework</p></li>
+<li><p>Setting project and program goals</p></li>
+</ul></li>
+<li><p>They are looking to hire for internal auditing. That internal auditor will report to the audit committee and directly to the council governance body, not the CEO. </p></li>
 </ul>
 </div>
-<div id="sub-dimension-2-13" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-14" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>NA</p>
+<p>They have competencies to coordinate with other institutions and relevant actors</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li><p>Results-based management concepts </p></li>
+<li><p>Project and program management </p></li>
+</ul></li>
 </ul>
 </div>
-<div id="sub-dimension-3-12" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-14" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>They have competences to use M&amp;E results to define results-oriented budgeting ( e.g., identify priorities, new public problems that should be adressed, policies that work, compare between policies)</p>
 </blockquote>
 <ul>
-<li>The MDAs are categorized as follows accordin to their level of technical capacity to conduct budgeting for results: HIGH level: - Ministry of Finance and Ministry of Planning. (Both ministries lead on the preparation of the annual budget estimates). * Their strenghts: production of annual economic &amp; social reviews which are tabled with the budget estimates; usually serve as a report card on activities and projects implemented by MDAs so as to encourage investments in continued or new projects in the following year. * The challenges they face: Implementation rate still hovers around 60% due to several factors including resource availability, poor conceptualization of some projects and emerging and competing priorities. - Ministry of Planning Oice of the Cabinet Secretary (A programme and project appraisal system that adopts a methodological approach was recenty instituted)* Their strenghts: Projects and programmes are appraised through a comprehensive and participatory approach *Challenges: Full system not yet approved MEDIUM level: Real sectors such as Agriculture and tourism - Strenghts: ability to mobilize donor investments which usually is accompanied by technical support LOW level: Social ministries</li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li><p>Results chain (logic model)/ levels of results </p></li>
+<li><p>RBM tool – Performance measurement framework</p></li>
+</ul></li>
+<li><p>They plan to put different layers of control to ensure effective management at all levels and transparency </p></li>
 </ul>
 </div>
-<div id="sub-dimension-4-12" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-11" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>NA</p>
+<p>They have soft skills (negotiation skills)</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li>Communicating M&amp;E information</li>
+</ul></li>
 </ul>
 </div>
 </div>
-<div id="section-13" class="section level3 unnumbered">
+<div id="section-14" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
-<div id="there-are-skilled-personnel-in-government-with-technical-capacity-and-competencies-to-conduct-monitoring-activities" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">3.0.3</span> There are skilled personnel in government with technical capacity and competencies to conduct monitoring activities</h3>
-<div id="sub-dimension-1-14" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<div id="there-are-skilled-personnel-in-the-ri-with-technical-capacity-and-competencies-to-conduct-monitoring-activities" class="section level3 tabset tabset-pills">
+<h3>16. There are skilled personnel in the RI with technical capacity and competencies to conduct monitoring activities:</h3>
+<p>Training has been provided for various staff levels. Also, The Spider impact System is very user-friendly, which helps the technical capacity to conduct monitoring activities. You can add information any day, and the institution demands reports quarterly and annually.</p>
+<div id="sub-element-1-15" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
 <p>They have technical skills to collect indicator data</p>
 </blockquote>
 <ul>
-<li>There are skilled personnel in some/all of Dominica’s MDAs with technical capacity and competencies to conduct monitoring for results</li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li><p>Indicator development</p></li>
+<li><p>Identifying sources of data and methods of data collection</p></li>
+</ul></li>
 </ul>
 </div>
-<div id="sub-dimension-2-14" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-15" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
 <p>They have technical skills to use monitoring tools</p>
 </blockquote>
 <ul>
-<li><p>The MDAs are categorized as follows accordin to their level of technical capacity to conduct monitoring for results: HIGH: Ministry of Planning - Strenghs: An online system for M &amp; E is currenty being developed - Challenges: There is competence; however, the dedicated capacity is lacking</p></li>
-<li><p>The people have capacity and competence to do M&amp;E but they need training, technique and tools to do it.</p></li>
+<li><p>Everyone must be familiar with the balanced scorecard methodology. We have been looking at certifying some staff and exposing others to the methodology</p></li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li>Developing a monitoring strategy</li>
+</ul></li>
 </ul>
 </div>
-<div id="sub-dimension-3-13" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-15" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>They have the competences to identify monitoring needs in order to collect relevant, pertinent and timely data</p>
 </blockquote>
 <ul>
-<li><p>The MDAs are categorized as follows accordin to their level of technical capacity to conduct monitoring for results: HIGH: Ministry of Planning - Strenghs: An online system for M &amp; E is currenty being developed - Challenges: There is competence; however, the dedicated capacity is lacking</p></li>
-<li><p>The people have capacity and competence to do M&amp;E but they need training, technique and tools to do it.</p></li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li><p>Developing targets/goals</p></li>
+<li><p>Results based reporting</p></li>
+</ul></li>
 </ul>
 </div>
 </div>
-<div id="section-14" class="section level3 unnumbered">
+<div id="section-15" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
-<div id="there-are-skilled-personnel-in-government-with-technical-capacity-and-competencies-to-conduct-evaluations-and-evaluation-activities" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">3.0.4</span> There are skilled personnel in government with technical capacity and competencies to conduct evaluations and evaluation activities</h3>
-<div id="sub-dimension-1-15" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<div id="there-are-skilled-personnel-in-the-ri-with-technical-capacity-and-competencies-to-conduct-evaluations-and-evaluation-activities" class="section level3 tabset tabset-pills">
+<h3>17. There are skilled personnel in the RI with technical capacity and competencies to conduct evaluations and evaluation activities:</h3>
+<p>Usually, professional organizations provide training. In addition, the organizations give certifications to validate the training and bring credibility.</p>
+<p>The staff is transitioning to electronic and technological-based elements (an e-platform). So they are providing the necessary training for the electronic transition.</p>
+<div id="sub-element-1-16" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
 <p>They have the competences to perform different evaluation types (e.g. design, process, impact) and use different methodologies (i.e., quantitative, qualitative, mixed-methods)</p>
 </blockquote>
 <ul>
-<li><p>There are not skilled personnel in some/all of Dominica’s MDAs with technical capacity and competencies to conduct evaluation for results. The Ministry of Planning has some capacity based on training exposure, but it’s only medium level. Some capacity line MDA’s are encouraged to build M&amp;E into programmes but we still face challenges in terms of dedicated human resource capacity and systematic approach to programme and project evaluation; usually done through consultancies</p></li>
-<li><p>There is a lack of capacity to perform evaluations; specifically in the Ministry of Planning. However, donors evaluate their funded capital projects</p></li>
-<li><p>The people have capacity and competence to do M&amp;E but they need training, technique and tools to do it.</p></li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li>Evaluation types (design, process, impact, etc.)</li>
+</ul></li>
 </ul>
 </div>
-<div id="sub-dimension-2-15" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-16" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
 <p>They have the competences to identify evaluation needs and match them with proper evaluation types and methodologies: define evaluation horizon and ask relevant evaluation questions</p>
 </blockquote>
 <ul>
-<li><p>There are not skilled personnel in some/all of Dominica’s MDAs with technical capacity and competencies to conduct evaluation for results. The Ministry of Planning has some capacity based on training exposure, but it’s only medium level. Some capacity line MDA’s are encouraged to build M&amp;E into programmes but we still face challenges in terms of dedicated human resource capacity and systematic approach to programme and project evaluation; usually done through consultancies</p></li>
-<li><p>There is a lack of capacity to perform evaluations; specifically in the Ministry of Planning. However, donors evaluate their funded capital projects</p></li>
-<li><p>The people have capacity and competence to do M&amp;E but they need training, technique and tools to do it.</p></li>
+<li><p>The staff at CXC has received training in the following RBM areas:</p>
+<ul>
+<li>Evaluation methods (qualitative, quantitative, mixed methods)</li>
+</ul></li>
 </ul>
 </div>
-<div id="sub-dimension-3-14" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-16" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>They have the competences to formulate reports that include relevant, pertinent and timely information for different stakeholders</p>
 </blockquote>
-<ul>
-<li><p>There are not skilled personnel in some/all of Dominica’s MDAs with technical capacity and competencies to conduct evaluation for results. The Ministry of Planning has some capacity based on training exposure, but it’s only medium level. Some capacity line MDA’s are encouraged to build M&amp;E into programmes but we still face challenges in terms of dedicated human resource capacity and systematic approach to programme and project evaluation; usually done through consultancies</p></li>
-<li><p>There is a lack of capacity to perform evaluations; specifically in the Ministry of Planning. However, donors evaluate their funded capital projects</p></li>
-<li><p>The people have capacity and competence to do M&amp;E but they need training, technique and tools to do it.</p></li>
-</ul>
 </div>
-<div id="sub-dimension-4-13" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-12" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>NA</p>
+<p>There is a capacity strengthening plan for on-going training in RBM and M&amp;E</p>
 </blockquote>
 <ul>
-<li></li>
+<li>Everyone must be friendly with the balanced scorecard methodology. We have been looking at certifying some staff and exposing others to the methodology</li>
 </ul>
 </div>
 </div>
-<div id="section-15" class="section level3 unnumbered">
+<div id="section-16" class="section level3 unlisted toc-ignore">
 <h3></h3>
+<hr />
 </div>
 </div>
 <div id="use" class="section level1">
-<h1><span class="header-section-number">4</span> Use</h1>
+<h1>Use</h1>
 <div id="rbm-documents-are-publicly-available-for-consultation" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">4.0.1</span> RBM documents are publicly available for consultation</h3>
-<div id="sub-dimension-1-16" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<h3>18. RBM documents are publicly available for consultation</h3>
+<p>CXC evaluates its initiatives and programs, but the results are not public. CXC and the private sector perform this evaluation. (no universities, CSOs, or funders/donors)</p>
+<div id="sub-element-1-17" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
-<p>National planning documents are publicly available</p>
+<p>Institutional planning documents are publicly available</p>
 </blockquote>
 <ul>
-<li>National Planning documents are public and availabe</li>
+<li><p>The Strategic Plan is publicly available on the website.</p></li>
+<li><p>There are reports on the implementation of the Strategic Management Framework</p></li>
 </ul>
 </div>
-<div id="sub-dimension-2-16" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-17" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>National budget plans are publicly available</p>
+<p>Institutional budget plans are publicly available</p>
 </blockquote>
 <ul>
-<li>National Budget Plans are public and available</li>
+<li><p>budget is not published on the website, it is internal. </p></li>
+<li><p>CXC is not a public company, so they do not include those details. It may not be beneficial to make it public because of the nature of CXC: </p>
+<ul>
+<li><p>There might be a situation of surplus or having income more than expected in one year, and people may think that CXC is a money-making company. </p></li>
+<li><p>Conversely, if a loss occurs, you may think that the company is drowning public resources. </p></li>
+<li><p>The nature of the institution is not money-making but to serve a public interest.</p></li>
+</ul></li>
+<li><p>The financial reports and audits are not included in the online report.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-3-15" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-17" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
 <p>Documents that mention the results/findings/recommendations of monitoring and evaluation activities are publicly available</p>
 </blockquote>
 <ul>
-<li><p>There are different stakeholders that demand accountability: international donors, parliament, private sector, etc. There is a procedure in the Parliament called question tank . The opposition can choose a particular matter that it wants more information on and raise a question in parliament parliament that has to be answered by government, it has to be answered properly and there is an opportunity for secondary questions to follow up. The private sector can also call for questions to the executive. They can choose the channel these questions are communicated to the Executive</p></li>
-<li><p>there are ministries that have mechanisms for transparency : National Security, general chambers, the division of label, financial intelligent unit, the integrity commission, the local commissions</p></li>
+<li><p><em>Corporate Planning and Strategy Management Unit (CPSM)</em> produces progress reports (in the implementation of CXC’s Strategic Plan) and Corporate Performance Reports. The reports are directed to the Internal - Line and Senior Management and Executive.</p></li>
+<li><p>The financial reports and audits are not included in the online report.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-4-14" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-13" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>NA</p>
+<p>M&amp;E manuals / guidelines /ToRs are publicly available</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
 </div>
-<div id="sub-dimension-5-8" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
+<div id="sub-element-5-10" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
 <blockquote>
-<p>NA</p>
+<p>There are mechanisms for the institution to know how much its reports and publications on M&amp;E are downloaded or used by citizens</p>
 </blockquote>
-<ul>
-<li></li>
-</ul>
-</div>
-<div id="sub-dimension-6-7" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
-<blockquote>
-<p>NA</p>
-</blockquote>
-<ul>
-<li></li>
-</ul>
 </div>
 </div>
-<div id="section-16" class="section level3 unnumbered">
+<div id="section-17" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
-<div id="there-is-an-enabling-environment-for-the-use-of-me-results" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">4.0.2</span> There is an enabling environment for the use of M&amp;E results</h3>
-<div id="sub-dimension-1-17" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<div id="there-are-guidelines-that-establish-the-rules-and-processes-to-address-and-use-of-me-results-1" class="section level3 tabset tabset-pills">
+<h3>19. There are guidelines that establish the rules and processes to address and use of M&amp;E results:</h3>
+<p>There are mechanisms implemented in CXC to incentivize the use of M&amp;E results: </p>
+<ul>
+<li><p>some regulations mandate the revision of monitoring and evaluation findings reports –&gt; There is the strategic management framework (Recently developed since Strat Plan is new)</p></li>
+<li><p>There are decision makers’ meetings where monitoring and evaluation findings reports are considered –&gt; CPSMCXC’s performance (Heads/ Executives monitors performance)</p></li>
+<li><p>There are mechanisms for the participation of stakeholders in the definition of monitoring activities and needs –&gt; internal and external stakeholders are involved</p></li>
+<li><p>There are mechanisms for the involvement of stakeholders in the definition of evaluation activities and needs –&gt; surveys were sent to stakeholders, and the internal stakeholders participated in discussions </p></li>
+<li><p>There are periodic meetings involving relevant stakeholders to review the M&amp;E information as an RBM System feedback exercise –&gt; CPSM meets with Heads and Heads updates, reviews performance</p></li>
+</ul>
+<p>Reports are published identifying areas for policy/project/activity improvement –&gt; there is a reporting system in place, and these reports are generated quarterly, semiannual, and annually. </p>
+<div id="sub-element-1-18" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
-<p>NA</p>
+<p>There are explicit possitive or negative incentives for the use of monitoring results</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>There are different committees and bodies that function as accountability mechanisms to CXC:</p>
+<ul>
+<li><p>Administrative and Finance Committee –&gt; Oversee CXC Finance and Admin activities (Finance and Admin management)</p></li>
+<li><p>Audit Committee –&gt; Newly formed to oversee Risk and audit for CXC (risk and audit Management)</p></li>
+<li><p>Governance body –&gt; Overseas governance-related matter (Overall governance by COUNCIL)</p></li>
+<li><p>CXC’s CEO —&gt; Overseas CXC’s strategic plan Mandate at the corporate level (Corporate level oversight of the Strat Plan)</p></li>
+<li><p>Heads of departments –&gt; Overseas the Strategic Plan at the operational level ( Operational level oversight of Strategic Plan)</p></li>
+<li><p>The documents that identify the different CXC’s committees, subcommittees, their members and, their roles can be emailed </p></li>
+</ul></li>
+<li><p>There is the employer of the year through the Quick score system. The system to measures the performance of the entire year; furthermore, the system holds everyone accountable and advances towards achieving results using the balanced scorecard methodology.</p></li>
 </ul>
 </div>
-<div id="sub-dimension-2-17" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-18" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>NA</p>
+<p>There are explicit possitive or negative incentives for the use of evaluation results</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>There are different committees and bodies that function as accountability mechanisms to CXC:</p>
+<ul>
+<li><p>Administrative and Finance Committee –&gt; Oversee CXC Finance and Admin activities (Finance and Admin management)</p></li>
+<li><p>Audit Committee –&gt; Newly formed to oversee Risk and audit for CXC (risk and audit Management)</p></li>
+<li><p>Governance body –&gt; Overseas governance-related matter (Overall governance by COUNCIL)</p></li>
+<li><p>CXC’s CEO —&gt; Overseas CXC’s strategic plan Mandate at the corporate level (Corporate level oversight of the Strat Plan)</p></li>
+<li><p>Heads of departments –&gt; Overseas the Strategic Plan at the operational level ( Operational level oversight of Strategic Plan)</p></li>
+<li><p>The documents that identify the different CXC’s committees, subcommittees, their members and, their roles can be emailed </p></li>
+</ul></li>
 </ul>
 </div>
 </div>
-<div id="section-17" class="section level3 unnumbered">
+<div id="section-18" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
-<div id="me-results-are-systematically-included-in-the-planning-of-government-programs-policies-and-projects-interventions" class="section level3 tabset tabset-pills">
-<h3><span class="header-section-number">4.0.3</span> M&amp;E results are systematically included in the planning of government programs, policies, and projects (interventions)</h3>
-<div id="sub-dimension-1-18" class="section level4 unnumbered">
-<h4>Sub-dimension 1</h4>
+<div id="me-results-are-systematically-included-in-the-planning-of-programs-policies-and-projects-interventions" class="section level3 tabset tabset-pills">
+<h3>20. M&amp;E results are systematically included in the planning of programs, policies, and projects (interventions):</h3>
+<p>The M&amp;E results are used in an institutionalized way: they follow an established procedure</p>
+<div id="sub-element-1-19" class="section level4 unnumbered">
+<h4>Sub-element 1</h4>
 <blockquote>
-<p>NA</p>
+<p> They are used in an institutionalized way: they follow a established procedure</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p> The CPSM produces progress reports (in the implementation of CXC’s Strategic Plan) and Corporate Performance Reports. The reports are directed to the Internal - Line and Senior Management and Executive.</p></li>
+<li><p>The M&amp;E results are used in an institutionalized way: they follow an established procedure</p></li>
 </ul>
 </div>
-<div id="sub-dimension-2-18" class="section level4 unnumbered">
-<h4>Sub-dimension 2</h4>
+<div id="sub-element-2-19" class="section level4 unnumbered">
+<h4>Sub-element 2</h4>
 <blockquote>
-<p>NA</p>
+<p> There are action plans or other management instruments to ensure M&amp;E results/recommendations are implemented</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>If one unit fails its objectives without proper evidence, the money is reallocated to other projects.</p></li>
+<li><p>There are action plans or other management instruments to ensure M&amp;E results/recommendations are implemented</p></li>
 </ul>
 </div>
-<div id="sub-dimension-3-16" class="section level4 unnumbered">
-<h4>Sub-dimension 3</h4>
+<div id="sub-element-3-18" class="section level4 unnumbered">
+<h4>Sub-element 3</h4>
 <blockquote>
-<p>NA</p>
+<p> They justify the creation and design of institutional interventions</p>
 </blockquote>
 <ul>
-<li></li>
+<li>They justify the creation and design of institutional interventions</li>
 </ul>
 </div>
-<div id="sub-dimension-4-15" class="section level4 unnumbered">
-<h4>Sub-dimension 4</h4>
+<div id="sub-element-4-14" class="section level4 unnumbered">
+<h4>Sub-element 4</h4>
 <blockquote>
-<p>NA</p>
+<p> They identify the target population of institutional interventions</p>
 </blockquote>
 <ul>
-<li></li>
+<li>They identify the target population of institutional interventions</li>
 </ul>
 </div>
-<div id="sub-dimension-5-9" class="section level4 unnumbered">
-<h4>Sub-dimension 5</h4>
+<div id="sub-element-5-11" class="section level4 unnumbered">
+<h4>Sub-element 5</h4>
 <blockquote>
-<p>NA</p>
+<p> They identify general and specific recommendations to improve the implementation of institutional interventions</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>The performance report is based on the performance of each unit’s product or activity.</p>
+<ul>
+<li>It’s divided by the suit of qualifications, so it shows the performance of each unit by activity.</li>
+</ul></li>
+<li><p>They identify general and specific recommendations to improve the implementation of institutional interventions</p></li>
 </ul>
 </div>
-<div id="sub-dimension-6-8" class="section level4 unnumbered">
-<h4>Sub-dimension 6</h4>
+<div id="sub-element-6-8" class="section level4 unnumbered">
+<h4>Sub-element 6</h4>
 <blockquote>
-<p>NA</p>
+<p> They inform the design/redesign of institutional interventions</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>Each department at CXC produces reports with recommendations to improve CXC’s Strategic Plan implementation. The reports are directed to the Internal - Line and Senior Management and Executive.</p></li>
+<li><p>They inform the design/redesign of institutional interventions</p></li>
 </ul>
 </div>
-<div id="sub-dimension-7-6" class="section level4 unnumbered">
-<h4>Sub-dimension 7</h4>
+<div id="sub-element-7-6" class="section level4 unnumbered">
+<h4>Sub-element 7</h4>
 <blockquote>
-<p>NA</p>
+<p> They inform the initial budget allocations of institutional interventions</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p> They produce budget and performance reports. </p></li>
+<li><p>They inform the initial budget allocations of institutional interventions</p></li>
 </ul>
 </div>
-<div id="sub-dimension-8-3" class="section level4 unnumbered">
-<h4>Sub-dimension 8</h4>
+<div id="sub-element-8-3" class="section level4 unnumbered">
+<h4>Sub-element 8</h4>
 <blockquote>
-<p>NA</p>
+<p> They inform the budget increase/decrease/suspension of institutional interventions</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p> They produce budget and performance reports. </p></li>
+<li><p>They use past reports because costs may be delayed. In addition, past reports help estimate future revenue and expenses. </p></li>
+<li><p>They implemented a monthly variance analysis that reports on a consolidated basis; instead of going down by unit or by program, it shows the current budget and related to the actual performance. </p></li>
+<li><p>They inform the budget increase/decrease/suspension of institutional interventions</p></li>
 </ul>
 </div>
-<div id="sub-dimension-9-1" class="section level4 unnumbered">
-<h4>Sub-dimension 9</h4>
+<div id="sub-element-9-3" class="section level4 unnumbered">
+<h4>Sub-element 9</h4>
 <blockquote>
-<p>NA</p>
+<p> Evaluation findings/reports are updated periodically</p>
 </blockquote>
 <ul>
-<li></li>
+<li>Evaluation findings/reports are updated periodically</li>
 </ul>
 </div>
-<div id="sub-dimension-10" class="section level4 unnumbered">
-<h4>Sub-dimension 10</h4>
+<div id="sub-element-10-1" class="section level4 unnumbered">
+<h4>Sub-element 10</h4>
 <blockquote>
-<p>NA</p>
+<p> The M&amp;E results are used to define the MDAs budget</p>
 </blockquote>
 <ul>
-<li></li>
+<li><p>M&amp;E results are used for budget allocations.</p></li>
+<li><p>The M&amp;E results are used to define the MDAs budget</p></li>
 </ul>
 </div>
 </div>
-<div id="section-18" class="section level3 unnumbered">
+<div id="section-19" class="section level3 unlisted toc-ignore">
 <h3></h3>
 </div>
 </div>
