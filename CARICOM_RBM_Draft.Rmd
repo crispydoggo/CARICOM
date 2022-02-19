@@ -70,6 +70,20 @@ RBM_full <- left_join(RBM,RBM_ideal)
 ```
 
 
+# Intento de viñetitas
+
+
+### Intento {.tabset .tabset-pills}
+
+## Muchas palabras {-}
+
+## Muchas muchas palabras {-}
+
+## Muchas muchas muchas palabras {-}
+
+## Muchas muchas muchas muchas muchas muchas palabras {-}
+
+### {.unlisted .toc-ignore}
 
 ```{r report, results = 'asis' , echo = FALSE}
 
@@ -105,6 +119,11 @@ for ( i in 1:4){
             filter( dimension == i) %>% 
             filter( bullet_id == j) %>% 
             filter( sub_id == k)
+      
+      # Cambiar el código con el label del sub elemento 
+      
+      # El número de sub-elemento (1.1) / label
+      # CARICOM -> Final Reports -> Sub elements short names ( R1 as well)
       
       cat(paste0( "\n\n#### Sub-element  ",k, " {-} \n\n"))
       
